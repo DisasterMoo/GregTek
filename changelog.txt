@@ -1,0 +1,11 @@
+1.0.1
+-Added Thaumcraft
+-Added Thaumic Energistics
+-Added Thaumic Tinkerer
+-Added Thaumic Computers
+-Added JsonLootbags
+-Changed recipes from thaumcraft to match GT style
+-Changed some quests to give rewards based on GT Tier
+
+1.0.0
+First version uploaded to github
