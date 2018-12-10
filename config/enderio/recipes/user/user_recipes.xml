@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+<recipe name="Gear" disabled="true" />
+<recipe name="Alloy: Electrical Steel" disabled="true" />
+<recipe name="Alloy: Energetic Alloy" disabled="true" />
+<recipe name="Alloy: Vibrant Alloy" disabled="true" />
+<recipe name="Alloy: Redstone Alloy" disabled="true" />
+<recipe name="Alloy: Conductive Iron" disabled="true" />
+<recipe name="Alloy: Pulsating Iron" disabled="true" />
+<recipe name="Alloy: Dark Steel" disabled="true" />
+<recipe name="Alloy: End Steel" disabled="true" />
+<recipe name="Alloy: Enderium Base (Thermal Expansion)" disabled="true" />
+<recipe name="Alloy: Enderium (Thermal Expansion)" disabled="true" />
+<recipe name="Chassis" disabled="true" />
+<recipe name="Soul Chassis" disabled="true" />
+</enderio:recipes>

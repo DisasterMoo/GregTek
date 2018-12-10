@@ -1,0 +1,33 @@
+{
+  "weight": 60,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 10,
+  "generation_predicate": "block:extraplanets:triton",
+  "dimension_filter": ["name:triton"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [17, 19]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:yttrium"
+        },
+        {
+          "weight": 40,
+          "value": "ore:gallium"
+        },
+		{
+          "weight": 30,
+          "value": "ore:niobium"
+        }
+      ]
+    }
+  }
+}

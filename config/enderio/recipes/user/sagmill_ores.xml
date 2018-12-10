@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+  <!-- Draconium (Draconic) -->
+
+  <recipe name="Sagmill: Draconium Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreDraconium" />
+      <output name="dustDraconium" amount="2" />
+      <output name="dustIridium" amount="1" chance="0.25" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <!-- Tech Reborn -->
+  <recipe name="Sagmill: Bauxite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreBauxite" />
+      <output name="dustBauxite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustAluminium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Galena Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGalena" />
+      <output name="dustGalena" amount="2" />
+      <output name="dustLead" chance="0.1" />
+      <output name="dustSilver" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Pyrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="orePyrite" />
+      <output name="dustPyrite" amount="2" />
+      <output name="dustSulfur" chance="0.25" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Pyrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackPyrite" />
+      <output name="dustPyrite" amount="2" />
+      <output name="dustSulfur" chance="0.25" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Chalcopyrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreChalcopyrite" />
+      <output name="dustChalcopyrite" amount="2" />
+      <output name="dustSulfur" chance="0.25" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Chalcopyrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackChalcopyrite" />
+      <output name="dustChalcopyrite" amount="2" />
+      <output name="dustSulfur" chance="0.25" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Cinnibar Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreCinnabar" />
+      <output name="dustCinnabar" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Sphalerite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="ore:oreNetherrackSphalerite" />
+      <output name="dustSphalerite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustZinc" chance="0.1" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Sheldonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreCooperite" />
+      <output name="dustCooperite" amount="2" />
+      <output name="minecraft:endstone" chance="0.15" />
+      <output name="dustPlatinum" chance="0.1" />
+    </sagmilling>
+  </recipe>
+
+  <recipe name="Sagmill: Sodalite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSodalite, -silentgems:gemorelight:10" />
+      <output name="dustSodalite" amount="2" />
+      <output name="minecraft:endstone" chance="0.15" />
+      <output name="dustAluminium" chance="0.1" />
+    </sagmilling>
+  </recipe>
+
+</enderio:recipes>

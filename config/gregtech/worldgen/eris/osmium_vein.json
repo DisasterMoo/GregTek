@@ -1,0 +1,29 @@
+{
+  "weight": 40,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 10,
+  "generation_predicate": "block:extraplanets:eris",
+  "dimension_filter": ["name:eris"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [17, 19]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 60,
+          "value": "ore:osmium"
+        },
+		{
+          "weight": 40,
+          "value": "ore:iridium"
+        }
+      ]
+    }
+  }
+}

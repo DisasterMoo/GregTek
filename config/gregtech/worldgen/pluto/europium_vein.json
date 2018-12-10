@@ -1,0 +1,29 @@
+{
+  "weight": 60,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 10,
+  "generation_predicate": "block:extraplanets:pluto",
+  "dimension_filter": ["name:pluto"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [17, 19]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 70,
+          "value": "ore:europium"
+        },
+		{
+          "weight": 30,
+          "value": "ore:iridium"
+        }
+      ]
+    }
+  }
+}

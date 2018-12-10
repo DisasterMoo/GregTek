@@ -1,0 +1,29 @@
+{
+  "weight": 60,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 10,
+  "generation_predicate": "block:extraplanets:iapetus",
+  "dimension_filter": ["name:iapetus"],
+
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 14]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 50,
+          "value": "ore:nickel"
+        },
+		{
+          "weight": 50,
+          "value": "ore:cobaltite"
+        }
+      ]
+    }
+  }
+}
