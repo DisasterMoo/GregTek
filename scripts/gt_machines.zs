@@ -445,6 +445,25 @@ reactor.recipeBuilder().inputs([<minecraft:bucket>, <minecraft:blaze_powder>*2])
 recipes.remove(<randomthings:stableenderpearl>);
 reactor.recipeBuilder().inputs([<minecraft:ender_pearl>, <ore:dustEmerald>]).fluidInputs([<liquid:lava>*1000]).outputs([<randomthings:stableenderpearl>]).EUt(30).duration(200).buildAndRegister();
 
+//dank/null
+recipes.remove(<danknull:dank_null_panel>);
+reactor.recipeBuilder().inputs([<minecraft:redstone>*4, <ore:paneGlassColorless>]).fluidInputs([<liquid:ender>*250]).outputs([<danknull:dank_null_panel>]).EUt(30).duration(200).buildAndRegister();
+
+recipes.remove(<danknull:dank_null_panel:1>);
+reactor.recipeBuilder().inputs([<ore:dustLapis>*4, <ore:paneGlassColorless>]).fluidInputs([<liquid:ender>*250]).outputs([<danknull:dank_null_panel:1>]).EUt(30).duration(200).buildAndRegister();
+
+recipes.remove(<danknull:dank_null_panel:2>);
+reactor.recipeBuilder().inputs([<ore:dustIron>*4, <ore:paneGlassColorless>]).fluidInputs([<liquid:ender>*500]).outputs([<danknull:dank_null_panel:2>]).EUt(120).duration(200).buildAndRegister();
+
+recipes.remove(<danknull:dank_null_panel:3>);
+reactor.recipeBuilder().inputs([<ore:dustGold>*4, <ore:paneGlassColorless>]).fluidInputs([<liquid:ender>*500]).outputs([<danknull:dank_null_panel:3>]).EUt(120).duration(200).buildAndRegister();
+
+recipes.remove(<danknull:dank_null_panel:4>);
+reactor.recipeBuilder().inputs([<ore:dustDiamond>*4, <ore:paneGlassColorless>]).fluidInputs([<liquid:ender>*1000]).outputs([<danknull:dank_null_panel:4>]).EUt(480).duration(200).buildAndRegister();
+
+recipes.remove(<danknull:dank_null_panel:5>);
+reactor.recipeBuilder().inputs([<ore:dustEmerald>*4, <ore:paneGlassColorless>]).fluidInputs([<liquid:ender>*1000]).outputs([<danknull:dank_null_panel:5>]).EUt(480).duration(200).buildAndRegister();
+
 //Remove motor making from assembler
 for entry in assembler.recipes {
     for entryOutputs in entry.outputs {
@@ -487,17 +506,6 @@ for entry in reactor.recipes {
 		}
 	}
 }
-
-/*
-reactor.findRecipe(30,[null],[<liquid:steam>*2000, <liquid:gas>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:hydrogen>*2000, <liquid:gas>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:hydrogen>*2000, <liquid:naphtha>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:steam>*2000, <liquid:naphtha>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:hydrogen>*2000, <liquid:light_fuel>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:steam>*2000, <liquid:light_fuel>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:hydrogen>*2000, <liquid:heavy_fuel>*1000]).remove();
-reactor.findRecipe(30,[null],[<liquid:steam>*2000, <liquid:heavy_fuel>*1000]).remove();
-*/
 
 //re-add
 reactor.recipeBuilder().fluidInputs([<liquid:hydrogen>*2000, <liquid:gas>*1000]).fluidOutputs([<liquid:hydrocracked_gas>*800]).EUt(30).duration(200).buildAndRegister();

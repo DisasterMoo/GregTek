@@ -14,7 +14,6 @@ var plateAluminium = <ore:plateAluminium>;
 var pressurePlateLightWeighted = <minecraft:light_weighted_pressure_plate>;
 var beeReceptacle = <gendustry:bee_receptacle>;
 var glassPane = <ore:paneGlass>;
-var mutagenProducer = <gendustry:mutagen_producer>;
 var pipeSmallBronze = <ore:pipeSmallBronze>;
 var hullMachineHV = <gregtech:machine:503>;
 var processorGenetics = <gendustry:genetics_processor>;
@@ -73,12 +72,6 @@ recipes.addShaped(beeReceptacle, [
 [ingotAluminium, ingotAluminium, ingotAluminium],
 [ingotAluminium, glassPane, ingotAluminium],
 [blockRedstone, pressurePlateLightWeighted, blockRedstone]]);
-
-//recipes.remove(mutagenProducer);
-recipes.addShaped(mutagenProducer, [
-[plateAluminium, pipeSmallBronze, plateAluminium],
-[modulePower, hullMachineHV, modulePower],
-[gearAluminium, tankMutagen, gearAluminium]]);
 
 //recipes.remove(apiaryIndustrial);	
 recipes.addShaped(apiaryIndustrial, [
