@@ -1,3 +1,11 @@
+1.0.2
+-Added Thaumic Bases
+-Added Thaumic Gadgets
+-Added Thaumic Additions
+-Fix OpenComputers recipes
+-Changed new mods recipes to match GT style
+-Changed Void metal and Thaumium armor crafting to match GT style.
+
 1.0.1
 -Added Thaumcraft
 -Added Thaumic Energistics
