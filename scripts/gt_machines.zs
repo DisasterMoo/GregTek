@@ -424,14 +424,14 @@ distillery.recipeBuilder().property("circuit",2).fluidInputs([<liquid:biomass>*1
 fluid_heater.recipeBuilder().property("circuit",1).fluidInputs([<liquid:biogas>*50]).fluidOutputs([<liquid:ethylene>*50]).duration(16).EUt(24).buildAndRegister();
 
 //Bacterial Sludge
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustThorium>*2]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*1000]).EUt(480).duration(400).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustThorium>*2]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*10000]).EUt(480).duration(400).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustUranium>*1]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*1000]).EUt(480).duration(100).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustThorium>*1]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*10000]).EUt(480).duration(100).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyUranium235>*1]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*1000]).EUt(480).duration(60).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyUranium235>*1]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*10000]).EUt(480).duration(60).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyPlutonium>*1]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*1000]).EUt(480).duration(25).buildAndRegister();
-reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyPlutonium>*1]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*10000]).EUt(480).duration(25).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustThorium>*2]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*50]).EUt(480).duration(400).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustThorium>*2]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*200]).EUt(480).duration(400).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustUranium>*1]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*50]).EUt(480).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustThorium>*1]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*200]).EUt(480).duration(100).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyUranium235>*1]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*50]).EUt(480).duration(60).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyUranium235>*1]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*200]).EUt(480).duration(60).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyPlutonium>*1]).fluidInputs([<liquid:water>*1000]).fluidOutputs([<liquid:mutagen>*50]).EUt(480).duration(25).buildAndRegister();
+reactor.recipeBuilder().inputs([<ore:dustRedstone>*10, <ore:dustTinyPlutonium>*1]).fluidInputs([<liquid:bacterialsludge>*1000]).fluidOutputs([<liquid:mutagen>*200]).EUt(480).duration(25).buildAndRegister();
 
 //Fertilized Dirt
 recipes.remove(<randomthings:fertilizeddirt>);
@@ -526,7 +526,6 @@ var drumTitanium = <gregtech:machine:2199>;
 var drumTungstenSteel = <gregtech:machine:2200>;
 
 // New Bronze
-recipes.remove(drumBronze);
 assembler.recipeBuilder()
   .inputs(<ore:plateCurvedBronze> * 3, <ore:ringBronze> * 2, <ore:boltBronze> * 4)
   .outputs(drumBronze * 1)
@@ -535,7 +534,6 @@ assembler.recipeBuilder()
   .buildAndRegister();
 
 // New Steel
-recipes.remove(drumSteel);
 assembler.recipeBuilder()
   .inputs(<ore:plateCurvedSteel> * 3, <ore:ringSteel> * 2, <ore:boltSteel> * 4)
   .outputs(drumSteel * 1)
