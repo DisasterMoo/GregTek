@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:100
 fboEnable:true
-difficulty:0
+difficulty:2
 fancyGraphics:false
 ao:0
 renderClouds:fast
@@ -85,6 +85,8 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_Change Caster Focus:33
+key_Misc Caster Toggle:34
 key_keybind.baublesinventory:48
 key_key.betterquesting.quests:44
 key_enderio.keybind.glidertoggle:34
@@ -108,12 +110,16 @@ key_key.open_danknull.desc:0
 key_key.findme.search:21
 key_key.ftbutilities.warp:35
 key_key.ftbutilities.nbt:49:ALT
+key_keybind.hammercorerenderstack:77
 key_key.moreoverlays.lightoverlay.desc:65
 key_key.moreoverlays.chunkbounds.desc:67
 key_pneumaticcraft.armor.options:22
 key_pneumaticcraft.helmet.hack:35
 key_pneumaticcraft.helmet.debugging.drone:21
 key_pneumaticcraft.boots.kick:45:CONTROL
+key_key.tg.open_gui:39
+key_key.tg.armor_ability:46
+key_key.tg.lense_gui:33
 key_key.toastcontrol.clear:36
 key_key.open_terminal.desc:0
 key_key.open_magnet.desc:0
@@ -134,7 +140,7 @@ key_bbw.key.mode:50
 key_bbw.key.fluidmode:33
 key_binniecore.key.hold.for.help.tooltips:15
 key_key.modeSwitch:34
-key_key.rangeChange:19
+key_key.rangeChange:181
 key_key.undoKey:22
 key_key.anchorKey:35
 key_key.carry.desc:42
@@ -174,6 +180,11 @@ key_invtweaks.key.sort:0
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:43:CONTROL
+key_techguns.key.toggleNightvision:49
+key_techguns.key.toggleSafemode:48
+key_techguns.key.toggleStepassist:47
+key_techguns.key.forceReload:19
+key_techguns.key.toggleJetpack:36
 key_tombstone.message.knowledge_of_death:0
 key_key.craftingGrid:46
 key_key.control:29
@@ -192,8 +203,8 @@ key_key.journeymap.fullscreen.north:200
 key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
-soundCategory_master:0.5033113
-soundCategory_music:0.2535211
+soundCategory_master:0.5066225
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.2535211
 soundCategory_block:1.0

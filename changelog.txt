@@ -1,7 +1,7 @@
 1.0.3
--Added Modern Warfare
+-Added Techguns
 -Added Bloodmoon
-Changed recipes of modern warfare to match GT style
+Changed recipes of techguns to match GT style
 Nerfed mutagen making in chemical reactor
 
 1.0.2
