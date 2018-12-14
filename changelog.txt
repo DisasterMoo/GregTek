@@ -1,3 +1,9 @@
+1.0.4
+Deduplication of plates from most materials
+Deduplication of some ingots
+Changed recipes for making GC and extraplanets batteries
+Fixed Tier 8 booster uncraftable
+
 1.0.3
 -Added Techguns
 -Added Bloodmoon

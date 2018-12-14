@@ -67,6 +67,54 @@ recipes.addShaped(<extraplanets:ultimate_fuel_loader>,[
 [<galacticraftcore:aluminum_wire:1>, <ore:circuitGAMaster>, <galacticraftcore:aluminum_wire:1>]
 ]);
 
+recipes.remove(<extraplanets:tier8_items:1>);
+recipes.addShaped(<extraplanets:tier8_items:1>,[
+[<extraplanets:tier7_items:6>, <minecraft:wool:14>, <extraplanets:tier7_items:6>],
+[<extraplanets:tier7_items:6>, <galacticraftcore:fuel_canister_partial:1>, <extraplanets:tier7_items:6>],
+[<extraplanets:tier8_items:3>, <galacticraftcore:air_vent>, <extraplanets:tier8_items:3>]
+]);
+
+recipes.remove(<extraplanets:zinc_battery>);
+recipes.addShaped(<extraplanets:zinc_battery>.withTag({electricity: 0.0 as float}),[
+[null, <ore:plateBatteryAlloy>, null],
+[<ore:plateLead>, <ore:dustZinc>, <ore:plateLead>],
+[<ore:plateLead>, <ore:dustZinc>, <ore:plateLead>]
+]);
+
+recipes.remove(<extraplanets:mercury_battery>);
+recipes.addShaped(<extraplanets:mercury_battery>.withTag({electricity: 0.0 as float}),[
+[null, <ore:plateBatteryAlloy>, null],
+[<ore:plateLead>, <ore:dustRedstone>, <ore:plateLead>],
+[<ore:plateLead>, <forge:bucketfilled>.withTag({FluidName: "mercury", Amount: 1000}), <ore:plateLead>]
+]);
+
+recipes.remove(<extraplanets:nickel_battery>);
+recipes.addShaped(<extraplanets:nickel_battery>.withTag({electricity: 0.0 as float}),[
+[null, <ore:plateBatteryAlloy>, null],
+[<ore:plateLead>, <ore:dustNickel>, <ore:plateLead>],
+[<ore:plateLead>, <ore:dustNickel>, <ore:plateLead>]
+]);
+
+recipes.remove(<extraplanets:ultimate_battery>);
+recipes.addShaped(<extraplanets:ultimate_battery>.withTag({electricity: 0.0 as float}),[
+[null, <ore:plateBatteryAlloy>, null],
+[<ore:plateLead>, <ore:dustLithium>, <ore:plateLead>],
+[<ore:plateLead>, <ore:dustLithium>, <ore:plateLead>]
+]);
+
+recipes.addShaped(<galacticraftplanets:basic_item_venus:2>,[
+[null, <ore:plateLead>, null],
+[<ore:plateLead>, <ore:dustPlutonium>, <ore:plateLead>],
+[null, <ore:plateLead>, null]
+]);
+
+recipes.remove(<galacticraftplanets:atomic_battery>);
+recipes.addShaped(<galacticraftplanets:atomic_battery>,[
+[null, <ore:plateBatteryAlloy>, null],
+[<ore:plateBatteryAlloy>, <galacticraftplanets:basic_item_venus:2>, <ore:plateBatteryAlloy>],
+[<ore:plateBatteryAlloy>, <ore:wireGtSingleSuperconductorLv>, <ore:plateBatteryAlloy>]
+]);
+
 #Thermal Cloth 3-5
 recipes.remove(<extraplanets:thermal_cloth>);
 recipes.addShaped(<extraplanets:thermal_cloth>,[

@@ -45,3 +45,17 @@ recipes.addShaped(<techguns:itemshared:70>,[
 [<ore:plateBlackSteel>,<gregtech:meta_item_1:32601>,<ore:plateBlackSteel>],
 [<ore:cableGtSingleCupronickel>,<ore:plateBlackSteel>,<ore:craftingToolScrewdriver>]
 ]);
+
+recipes.remove(<techguns:stielgranate>);
+recipes.addShaped(<techguns:stielgranate>*4,[
+[null,<ore:plateCurvedIron>,<ore:gunpowder>],
+[null,<ore:stickWood>,<ore:plateCurvedIron>],
+[<ore:ringIron>,null,null]
+]);
+
+recipes.remove(<techguns:fraggrenade>);
+recipes.addShaped(<techguns:fraggrenade>*4,[
+[null,<ore:plateSteel>,<ore:ringSteel>],
+[<ore:plateSteel>,<ore:gunpowder>,<ore:plateSteel>],
+[null,<ore:plateSteel>,null]
+]);

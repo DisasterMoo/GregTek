@@ -19,6 +19,17 @@
 <ore:plateIridium>.remove(<thermalfoundation:material:327>);
 <ore:plateElectrum>.remove(<thermalfoundation:material:353>);
 <ore:plateInvar>.remove(<thermalfoundation:material:354>);
+<ore:ingotTitanium>.remove(<techguns:itemshared:85>);
+<ore:ingotTitanium>.remove(<galacticraftplanets:item_basic_asteroids>);
+<ore:ingotTungsten>.remove(<extraplanets:tier9_items:5>);
+<ore:ingotZinc>.remove(<extraplanets:tier8_items:5>);
+<ore:ingotPlatinum>.remove(<extraplanets:tier11_items:5>);
+<ore:ingotNickel>.remove(<extraplanets:tier5_items:7>);
+<ore:nuggetSteel>.remove(<thermalfoundation:material:224>);
+
+#Remove furnace
+furnace.remove(<techguns:itemshared:85>);
+furnace.remove(<galacticraftplanets:item_basic_asteroids>);
 
 
 #Remove from JEI
@@ -42,3 +53,11 @@ mods.jei.JEI.removeAndHide(<thermalfoundation:material:326>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:327>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:353>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:354>);
+mods.jei.JEI.removeAndHide(<techguns:itemshared:85>);
+mods.jei.JEI.removeAndHide(<galacticraftplanets:item_basic_asteroids>);
+mods.jei.JEI.removeAndHide(<extraplanets:tier9_items:5>);
+mods.jei.JEI.removeAndHide(<extraplanets:tier8_items:5>);
+mods.jei.JEI.removeAndHide(<extraplanets:ingot_mercury>);
+mods.jei.JEI.removeAndHide(<extraplanets:tier11_items:5>);
+mods.jei.JEI.removeAndHide(<extraplanets:tier5_items:7>);
+mods.jei.JEI.removeAndHide(<thermalfoundation:material:224>);
