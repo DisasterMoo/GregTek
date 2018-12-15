@@ -2575,8 +2575,8 @@ mods.jei.JEI.addItem(<tconstruct:toolforge>.withTag({textureBlock: {id: "gregtec
 
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>,[
-[<ore:blockSeared>,<ore:blockSeared>,<ore:blockSeared>],
-[<ore:cobblestone>,<minecraft:flint>,<ore:cobblestone>],
+[<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>],
+[<minecraft:flint>,<minecraft:flint>,<minecraft:flint>],
 [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]
 ]);
 
@@ -2598,43 +2598,12 @@ recipes.addShaped(<gregtech:meta_tool:12>.withTag({"GT.ToolStats": {PrimaryMater
 //Melter
 mods.jei.JEI.removeAndHide(<tcomplement:melter>);
 mods.jei.JEI.removeAndHide(<tcomplement:melter:8>);
-mods.jei.JEI.removeAndHide(<tcomplement:porcelain_tank>);
-mods.jei.JEI.removeAndHide(<tcomplement:porcelain_tank:1>);
-mods.jei.JEI.removeAndHide(<tcomplement:porcelain_tank:2>);
 
-recipes.remove(<ceramics:faucet>);
-recipes.addShaped(<tcomplement:porcelain_melter>, [
-[null, null, null], 
-[<ore:clayPorcelain>, null, <ore:clayPorcelain>], 
-[null, <ore:clayPorcelain>, null]
-]);
-
-recipes.remove(<tcomplement:porcelain_melter>);
-recipes.addShaped(<tcomplement:porcelain_melter>, [
-[null, <ore:clayPorcelain>, null], 
-[<ore:clayPorcelain>, null, <ore:clayPorcelain>], 
-[<ore:clayPorcelain>, <ore:clayPorcelain>, <ore:clayPorcelain>]
-]);
-
-recipes.remove(<tcomplement:porcelain_melter:8>);
-recipes.addShaped(<tcomplement:porcelain_melter:8>, [
-[null, <ore:clayPorcelain>, null], 
-[<ore:clayPorcelain>, <ore:clayPorcelain>, <ore:clayPorcelain>], 
-[<ore:clayPorcelain>, <minecraft:flint>, <ore:clayPorcelain>]
-]);
-
-recipes.remove(<tcomplement:porcelain_casting:1>);
-recipes.addShaped(<tcomplement:porcelain_casting:1>, [
-[<ore:clayPorcelain>, null, <ore:clayPorcelain>], 
-[<ore:clayPorcelain>, null, <ore:clayPorcelain>], 
-[<ore:clayPorcelain>, <ore:clayPorcelain>, <ore:clayPorcelain>]
-]);
-
-recipes.remove(<tcomplement:porcelain_casting>);
-recipes.addShaped(<tcomplement:porcelain_casting>, [
-[<ore:clayPorcelain>, <ore:clayPorcelain>, <ore:clayPorcelain>], 
-[<ore:clayPorcelain>, null, <ore:clayPorcelain>], 
-[<ore:clayPorcelain>, null, <ore:clayPorcelain>]
+recipes.remove(<twilightforest:uncrafting_table>);
+recipes.addShaped(<twilightforest:uncrafting_table>, [
+[<gregtech:meta_item_1:32652>, <ore:workbench>, <gregtech:meta_item_1:32652>], 
+[<ore:circuitGAExtreme>, <gregtech:machine:503>, <ore:circuitGAExtreme>], 
+[<ore:craftingFilter>, <ore:circuitGAExtreme>, <ore:craftingFilter>]
 ]);
 
 //Un-Crafting table

@@ -1,3 +1,8 @@
+1.0.5
+Changed recipe for furnace. Removed the gate for Tcomplement's Melter.
+Reverted back recipes for Tcomplement's porcelain items.
+Added Melting for basic metals ores and dusts in TConstruct.
+
 1.0.4
 Deduplication of plates from most materials
 Deduplication of some ingots
