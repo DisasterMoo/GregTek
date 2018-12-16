@@ -1,5 +1,7 @@
-1.0.6-quick
-Added optifine
+1.0.7
+Added Optifine
+Added OfflineSkins
+Fix steel nuggets
 
 1.0.6
 Fix techguns bug with twilight forest

@@ -34,6 +34,7 @@ furnace.remove(<galacticraftplanets:item_basic_asteroids>);
 
 
 #Remove from JEI
+mods.jei.JEI.removeAndHide(<techguns:itemshared:88>);
 mods.jei.JEI.removeAndHide(<techguns:itemshared:46>);
 mods.jei.JEI.removeAndHide(<thermalfoundation:material:32>);
 mods.jei.JEI.removeAndHide(<techguns:itemshared:47>);
