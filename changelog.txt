@@ -1,3 +1,7 @@
+1.0.6
+Fix techguns bug with twilight forest
+Fix hopper recipes
+
 1.0.5
 Changed recipe for furnace. Removed the gate for Tcomplement's Melter.
 Reverted back recipes for Tcomplement's porcelain items.

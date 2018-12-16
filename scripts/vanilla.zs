@@ -1876,9 +1876,9 @@ mods.jei.JEI.removeAndHide(<pneumaticcraft:unassembled_pcb>);
 mods.jei.JEI.removeAndHide(<pneumaticcraft:failed_pcb>);
 
 //Replace The Vanilla Hopper
-mods.jei.JEI.removeAndHide(<minecraft:hopper>);
+recipes.remove(<minecraft:hopper>);
 recipes.remove(<pneumaticcraft:omnidirectional_hopper>);
-recipes.addShaped(<pneumaticcraft:omnidirectional_hopper>,[
+recipes.addShaped(<minecraft:hopper>,[
 [<ore:plateIron>,<ore:craftingToolWrench>,<ore:plateIron>],
 [<ore:plateIron>,<minecraft:chest>,<ore:plateIron>],
 [null,<ore:plateIron>]
@@ -2152,7 +2152,6 @@ mods.jei.JEI.removeAndHide(<forestry:gear_tin>);
 mods.jei.JEI.removeAndHide(<forestry:scoop>);
 mods.jei.JEI.removeAndHide(<extratrees:machine>);
 mods.jei.JEI.removeAndHide(<forestry:wrench>);
-mods.jei.JEI.removeAndHide(<forestry:raintank>);
 mods.jei.JEI.removeAndHide(<binniecore:storage:*>);
 mods.jei.JEI.removeAndHide(<botany:trowel_wood>);
 mods.jei.JEI.removeAndHide(<botany:trowel_stone>);
@@ -2721,6 +2720,9 @@ furnace.remove(<gregtech:meta_item_1:10702>);
 furnace.remove(<gregtech:meta_item_1:10703>);
 furnace.remove(<gregtech:meta_item_1:2704>);
 furnace.setFuel(<forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), 6400);
+
+recipes.addShapeless(<minecraft:hopper>,[<pneumaticcraft:omnidirectional_hopper>]);
+recipes.addShapeless(<pneumaticcraft:omnidirectional_hopper>,[<minecraft:hopper>]);
 
 //Aluminium != Aluminum
 <ore:dustAluminium>.remove(<galacticraftcore:ic2compat>);
