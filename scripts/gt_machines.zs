@@ -538,7 +538,7 @@ assembler.recipeBuilder()
   .inputs(<ore:plateCurvedSteel> * 3, <ore:ringSteel> * 2, <ore:boltSteel> * 4)
   .outputs(drumSteel * 1)
   .duration(30)
-  .EUt(120)
+  .EUt(30)
   .buildAndRegister();
   
   

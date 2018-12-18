@@ -31,6 +31,7 @@ mods.tconstruct.Melting.removeRecipe(<liquid:end_steel>);
 mods.tconstruct.Melting.removeRecipe(<liquid:electrical_steel>);
 mods.tconstruct.Melting.removeRecipe(<liquid:redstone_alloy>);
 mods.tconstruct.Melting.removeRecipe(<liquid:soularium>);
+mods.tconstruct.Melting.removeRecipe(<liquid:enderium>, <thermalfoundation:material:103>);
 
 //Add basic metals
 mods.tconstruct.Melting.addRecipe(<liquid:iron> * 144,<ore:oreMagnetite>, 534);
@@ -66,6 +67,17 @@ mods.tconstruct.Melting.addRecipe(<liquid:tin> * 288,<ore:oreNetherrackCassiteri
 mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 144,<ore:oreSphalerite>, 337);
 mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 144,<ore:oreGravelSphalerite>, 337);
 mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 144,<ore:oreNetherrackSphalerite>, 337);
+
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:oreGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:oreGravelGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:oreNetherrackGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:orePentlandite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:oreGravelPentlandite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:oreNetherrackPentlandite>, 513);
+
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:oreCobaltite>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:oreGravelCobaltite>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:oreNetherrackCobaltite>, 625);
 
 #Dusts
 mods.tconstruct.Melting.addRecipe(<liquid:iron> * 144,<ore:dustMagnetite>, 534);
@@ -138,6 +150,28 @@ mods.tconstruct.Melting.addRecipe(<liquid:lead> * 144,<ore:dustLead>, 350);
 mods.tconstruct.Melting.addRecipe(<liquid:lead> * 144,<ore:dustImpureLead>, 350);
 mods.tconstruct.Melting.addRecipe(<liquid:lead> * 144,<ore:dustPureLead>, 350);
 mods.tconstruct.Melting.addRecipe(<liquid:lead> * 144,<ore:crushedLead>, 350);
+
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustNickel>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustImpureNickel>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustPureNickel>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:crushedNickel>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustImpureGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustPureGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:crushedGarnierite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustPentlandite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustImpurePentlandite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:dustPurePentlandite>, 513);
+mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 144,<ore:crushedPentlandite>, 513);
+
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:dustCobalt>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:dustImpureCobalt>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:dustPureCobalt>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:crushedCobalt>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:dustCobaltite>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:dustImpureCobaltite>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:dustPureCobaltite>, 625);
+mods.tconstruct.Melting.addRecipe(<liquid:cobalt> * 144,<ore:crushedCobaltite>, 625);
 
 //REMOVE PLATE CASTING
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast_custom:3>);

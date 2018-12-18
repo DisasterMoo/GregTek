@@ -7,7 +7,7 @@
 
   "generator": {
     "type": "sphere",
-    "radius": [7, 9]
+    "radius": [10, 15]
   },
   "filler": {
     "type": "simple",
