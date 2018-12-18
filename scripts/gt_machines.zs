@@ -530,14 +530,14 @@ assembler.recipeBuilder()
   .inputs(<ore:plateCurvedBronze> * 3, <ore:ringBronze> * 2, <ore:boltBronze> * 4)
   .outputs(drumBronze * 1)
   .duration(160)
-  .EUt(30)
+  .EUt(8)
   .buildAndRegister();
 
 // New Steel
 assembler.recipeBuilder()
   .inputs(<ore:plateCurvedSteel> * 3, <ore:ringSteel> * 2, <ore:boltSteel> * 4)
   .outputs(drumSteel * 1)
-  .duration(160)
+  .duration(30)
   .EUt(120)
   .buildAndRegister();
   
@@ -548,7 +548,7 @@ assembler.recipeBuilder()
   .inputs(<ore:plateCurvedStainlessSteel> * 3, <ore:ringStainlessSteel> * 2, <ore:boltStainlessSteel> * 4)
   .outputs(drumStainlessSteel * 1)
   .duration(160)
-  .EUt(480)
+  .EUt(120)
   .buildAndRegister();
   
   
@@ -558,7 +558,7 @@ assembler.recipeBuilder()
   .inputs(<ore:plateCurvedTitanium> * 3, <ore:ringTitanium> * 2, <ore:boltTitanium> * 4)
   .outputs(drumTitanium * 1)
   .duration(160)
-  .EUt(1920)
+  .EUt(480)
   .buildAndRegister();
   
   
@@ -568,5 +568,5 @@ assembler.recipeBuilder()
   .inputs(<ore:plateCurvedTungstenSteel> * 3, <ore:ringTungstenSteel> * 2, <ore:boltTungstenSteel> * 4)
   .outputs(drumTungstenSteel * 1)
   .duration(160)
-  .EUt(7680)
+  .EUt(1920)
   .buildAndRegister();

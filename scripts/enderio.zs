@@ -266,7 +266,7 @@ assembler.recipeBuilder().inputs([<enderio:item_basic_capacitor:1>*2, <ore:boltV
 furnace.remove(<thermalfoundation:material:167>);
 blast_furnace.recipeBuilder().inputs([<ore:dustEnderium> * 1])
     .outputs([<thermalfoundation:material:167> * 1])
-    .property("temperature", 4500) //this is a minimal temperature at which the item will be smelted
+    .property("temperature", 2700) //this is a minimal temperature at which the item will be smelted
     .duration(7000)
     .EUt(120)
     .buildAndRegister();
@@ -342,7 +342,7 @@ blast_furnace.recipeBuilder().inputs([<ore:dustElectricalSteel>* 1])
 furnace.remove(<enderio:item_alloy_ingot:8>);
 blast_furnace.recipeBuilder().inputs([<ore:dustEndSteel>* 1])
     .outputs([<enderio:item_alloy_ingot:8> * 1])
-    .property("temperature", 3400) //this is a minimal temperature at which the item will be smelted
+    .property("temperature", 2700) //this is a minimal temperature at which the item will be smelted
     .duration(2000)
     .EUt(120)
     .buildAndRegister();

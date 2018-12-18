@@ -43,14 +43,14 @@
                 {
                     "type": "item",
                     "name": "gregtech:meta_item_1",
-                    "weight": 25,
+                    "weight": 30,
                     "functions": [
                         
                         {
                             "function": "minecraft:set_count",
                             "count": {
-                                "min": 5,
-                                "max": 15
+                                "min": 8,
+                                "max": 25
                             }
                         },
                         {

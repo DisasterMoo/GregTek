@@ -1,3 +1,13 @@
+1.0.8
+-Enderium and End Steel smelting temperature reduced to 2700K
+-LootBags chance improved
+-Brass and Bronze small and tiny dusts crafts to full dust fixed
+-Bloodmoon now always on 21th day, 2% chance for normal days
+-Requirements for making drums in assembling machine reduced
+Mods update:
+-GregicAdditions-1.12.2-1.3.0
+-industrialforegoing-1.12.2-1.11.10-223
+
 1.0.7
 Added Optifine
 Added OfflineSkins

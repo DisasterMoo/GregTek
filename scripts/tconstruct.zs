@@ -148,5 +148,9 @@ mods.jei.JEI.hide(<tconstruct:cast_custom:3>);
 //Add bronze only using tinker alloying
 mods.tconstruct.Alloy.addRecipe(<liquid:bronze>*3, [<liquid:copper>*3, <liquid:tin>*1]);
 recipes.remove(<gregtech:meta_item_1:2095>);
+recipes.addShapeless(<gregtech:meta_item_1:2095>,[<ore:dustSmallBronze>,<ore:dustSmallBronze>,<ore:dustSmallBronze>,<ore:dustSmallBronze>]);
+recipes.addShapeless(<gregtech:meta_item_1:2095>,[<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>,<ore:dustTinyBronze>]);
 mods.tconstruct.Alloy.addRecipe(<liquid:brass>*3, [<liquid:copper>*3, <liquid:zinc>*1]);
 recipes.remove(<gregtech:meta_item_1:2094>);
+recipes.addShapeless(<gregtech:meta_item_1:2094>,[<ore:dustSmallBrass>,<ore:dustSmallBrass>,<ore:dustSmallBrass>,<ore:dustSmallBrass>]);
+recipes.addShapeless(<gregtech:meta_item_1:2094>,[<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>,<ore:dustTinyBrass>]);
