@@ -8,9 +8,9 @@ mods.forestry.Carpenter.addRecipe(<forestry:hardened_machine>, [
 
 mods.forestry.Carpenter.removeRecipe(<forestry:portable_alyzer>);
 mods.forestry.Carpenter.addRecipe(<forestry:portable_alyzer>, [
-[<ore:plateTin>,<ore:plateDiamond>,<ore:plateTin>],
+[<ore:plateTin>,<gregtech:meta_item_1:32680>,<ore:plateTin>],
 [<ore:plateTin>,<ore:plateGlass>,<ore:plateTin>],
-[<ore:dustRedstone>,<ore:circuitGAGood>,<ore:dustRedstone>]],
+[<ore:dustRedstone>,<ore:circuitGABasic>,<ore:dustRedstone>]],
  25, <liquid:water>*2000);
 
 mods.forestry.Carpenter.removeRecipe(<botany:database>);

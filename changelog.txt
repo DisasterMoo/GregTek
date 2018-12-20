@@ -1,4 +1,15 @@
-1.0.9
+1.10
+-Changed versioning(too confusing), now we will use major dot minor
+-More ores can be processed in sag mill
+-Pulsating iron can be smelted using 1700K(Cupronickel)
+-Mixer now wields proper amount of dusts for end steel and pulsating iron
+-Changed recipe for forestry's portable analyser: now can be made in LV tier
+-Changed recipe for grinding balls: Solidify the alloys
+Mods removed:
+-Fancy Fluid Storage(In favor of tinker's tank)
+-Reborn Core
+
+1.9
 -Added melting of garnierite, pentlandite and cobaltite in smeltery
 -Remove melting of enderium dusts directly on smeltery(bypass blast furnace)
 -Made Larger oil lakes generation
@@ -17,7 +28,7 @@ Mods update:
 -randomtweaks-1.12.2-2.3.0.1
 -RebornCore-1.12.2-3.12.0.378-universal
 
-1.0.8
+1.8
 -Enderium and End Steel smelting temperature reduced to 2700K
 -LootBags chance improved
 -Brass and Bronze small and tiny dusts crafts to full dust fixed
@@ -26,36 +37,36 @@ Mods update:
 Mods update:
 -GregicAdditions-1.12.2-1.3.0
 -industrialforegoing-1.12.2-1.11.10-223
--WeatherConfig-1.12-1.0.1
+-WeatherConfig-1.12-1.1
 
-1.0.7
+1.7
 Added Optifine
 Added OfflineSkins
 Fix steel nuggets
 
-1.0.6
+1.6
 Fix techguns bug with twilight forest
 Fix hopper recipes
 
-1.0.5
+1.5
 Changed recipe for furnace. Removed the gate for Tcomplement's Melter.
 Reverted back recipes for Tcomplement's porcelain items.
 Added Melting for basic metals ores and dusts in TConstruct.
 
-1.0.4
+1.4
 Deduplication of plates from most materials
 Deduplication of some ingots
 Changed recipes for making GC and extraplanets batteries
 Fixed Tier 8 booster uncraftable
 Changed recipe for Techguns machines(GT style)
 
-1.0.3
+1.3
 -Added Techguns
 -Added Bloodmoon
 Changed recipes of techguns to match GT style
 Nerfed mutagen making in chemical reactor
 
-1.0.2
+1.2
 -Added Thaumic Bases
 -Added Thaumic Gadgets
 -Added Thaumic Additions
@@ -63,7 +74,7 @@ Nerfed mutagen making in chemical reactor
 -Changed new mods recipes to match GT style
 -Changed Void metal and Thaumium armor crafting to match GT style.
 
-1.0.1
+1.1
 -Added Thaumcraft
 -Added Thaumic Energistics
 -Added Thaumic Tinkerer
@@ -72,5 +83,5 @@ Nerfed mutagen making in chemical reactor
 -Changed recipes from thaumcraft to match GT style
 -Changed some quests to give rewards based on GT Tier
 
-1.0.0
+1.0
 First version uploaded to github

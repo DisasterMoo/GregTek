@@ -29,10 +29,27 @@
       <output name="dustSilver" chance="0.1"/>
     </sagmilling>
   </recipe>
+  
+  <recipe name="Sagmill: Gravel Galena Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGalena" />
+      <output name="dustGalena" amount="2" />
+      <output name="dustLead" chance="0.1" />
+      <output name="dustSilver" chance="0.1"/>
+    </sagmilling>
+  </recipe>
 
   <recipe name="Sagmill: Pyrite Ore" required="false">
     <sagmilling energy="3600">
       <input name="orePyrite" />
+      <output name="dustPyrite" amount="2" />
+      <output name="dustSulfur" chance="0.25" />
+    </sagmilling>
+  </recipe>
+  
+    <recipe name="Sagmill: Gravel Pyrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelPyrite" />
       <output name="dustPyrite" amount="2" />
       <output name="dustSulfur" chance="0.25" />
     </sagmilling>
@@ -54,6 +71,14 @@
     </sagmilling>
   </recipe>
   
+    <recipe name="Sagmill: Gravel Chalcopyrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelChalcopyrite" />
+      <output name="dustChalcopyrite" amount="2" />
+      <output name="dustSulfur" chance="0.25" />
+    </sagmilling>
+  </recipe>
+  
   <recipe name="Sagmill: Nether Chalcopyrite Ore" required="false">
     <sagmilling energy="3600">
       <input name="oreNetherrackChalcopyrite" />
@@ -66,13 +91,44 @@
     <sagmilling energy="3600">
       <input name="oreCinnabar" />
       <output name="dustCinnabar" amount="2" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Cinnibar Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelCinnabar" />
+      <output name="dustCinnabar" amount="2" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Cinnibar Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackCinnabar" />
+      <output name="dustCinnabar" amount="2" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Sphalerite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSphalerite" />
+      <output name="dustSphalerite" amount="2" />
       <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustZinc" chance="0.1" />
+    </sagmilling>
+  </recipe>
+  
+    <recipe name="Sagmill: Gravel Sphalerite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSphalerite" />
+      <output name="dustSphalerite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustZinc" chance="0.1" />
     </sagmilling>
   </recipe>
   
   <recipe name="Sagmill: Nether Sphalerite Ore" required="false">
     <sagmilling energy="3600">
-      <input name="ore:oreNetherrackSphalerite" />
+      <input name="oreNetherrackSphalerite" />
       <output name="dustSphalerite" amount="2" />
       <output name="minecraft:netherrack" chance="0.15" />
       <output name="dustZinc" chance="0.1" />
@@ -94,6 +150,711 @@
       <output name="dustSodalite" amount="2" />
       <output name="minecraft:endstone" chance="0.15" />
       <output name="dustAluminium" chance="0.1" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Sodalite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSodalite, -silentgems:gemorelight:10" />
+      <output name="dustSodalite" amount="2" />
+      <output name="minecraft:endstone" chance="0.15" />
+      <output name="dustAluminium" chance="0.1" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Ruby Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackRuby" />
+      <output name="gemRuby" amount="2" />
+      <output name="gemRuby" chance="0.5" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Ruby Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelRuby" />
+      <output name="gemRuby" amount="2" />
+      <output name="gemRuby" chance="0.5" />
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Tantalite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreTantalite" />
+      <output name="dustTantalite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustTantalum" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Tantalite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelTantalite" />
+      <output name="dustTantalite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustTantalum" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Spessartine Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSpessartine" />
+      <output name="dustSpessartine" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustManganese" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Spessartine Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSpessartine" />
+      <output name="dustSpessartine" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustManganese" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Grossular Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGrossular" />
+      <output name="dustGrossular" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCalcium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Grossular Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGrossular" />
+      <output name="dustGrossular" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCalcium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Lignite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreLignite" />
+      <output name="gemLignite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCoal" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Lignite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelLignite" />
+      <output name="gemLignite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCoal" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+    <recipe name="Sagmill: Coal Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreCoal" />
+      <output name="gemCoal" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustLignite" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Coal Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelCoal" />
+      <output name="gemCoal" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustLignite" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Stibnite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreStibnite" />
+      <output name="dustStibnite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustAntimony" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Stibnite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelStibnite" />
+      <output name="dustStibnite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustAntimony" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Stibnite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackStibnite" />
+      <output name="dustStibnite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustAntimony" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Copper Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelCopper" />
+      <output name="dustCopper" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustGold" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Copper Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackCopper" />
+      <output name="dustCopper" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustGold" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Iron Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelIron" />
+      <output name="dustIron" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Iron Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackIron" />
+      <output name="dustIron" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Tetrahedrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreTetrahedrite" />
+      <output name="dustTetrahedrite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustZinc" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Tetrahedrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelTetrahedrite" />
+      <output name="dustTetrahedrite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustZinc" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Tetrahedrite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackTetrahedrite" />
+      <output name="dustTetrahedrite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustZinc" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Sulfur Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSulfur" />
+      <output name="dustSulfur" amount="6" />
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Sulfur Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackSulfur" />
+      <output name="dustSulfur" amount="6" />
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Almandine Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreAlmandine" />
+      <output name="gemAlmandine" amount="2" />
+      <output name="gemAlmandine" chance="0.5" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Almandine Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelAlmandine" />
+      <output name="gemAlmandine" amount="2" />
+      <output name="gemAlmandine" chance="0.5" />
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Sapphire Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSapphire" />
+      <output name="gemSapphire" amount="2" />
+      <output name="gemSapphire" chance="0.5" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Sapphire Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSapphire" />
+      <output name="gemSapphire" amount="2" />
+      <output name="gemSapphire" chance="0.5" />
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: GreenSapphire Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGreenSapphire" />
+      <output name="gemGreenSapphire" amount="2" />
+      <output name="gemGreenSapphire" chance="0.5" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel GreenSapphire Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGreenSapphire" />
+      <output name="gemGreenSapphire" amount="2" />
+      <output name="gemGreenSapphire" chance="0.5" />
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Bentonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreBentonite" />
+      <output name="dustBentonite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCalcium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Bentonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelBentonite" />
+      <output name="dustBentonite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCalcium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Lepidolite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreLepidolite" />
+      <output name="dustLepidolite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCaesium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Lepidolite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelLepidolite" />
+      <output name="dustLepidolite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCaesium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Spodumene Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSpodumene" />
+      <output name="dustSpodumene" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustLithium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Spodumene Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSpodumene" />
+      <output name="dustSpodumene" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustLithium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: RockSalt Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreRockSalt" />
+      <output name="dustRockSalt" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustBorax" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel RockSalt Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelRockSalt" />
+      <output name="dustRockSalt" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustBorax" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Salt Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreSalt" />
+      <output name="dustRockSalt" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustBorax" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Salt Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelSalt" />
+      <output name="dustSalt" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustBorax" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Graphite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGraphite" />
+      <output name="dustGraphite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCarbon" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Graphite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGraphite" />
+      <output name="dustGraphite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCarbon" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Diamond Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelDiamond" />
+      <output name="gemDiamond" amount="2" />
+      <output name="gemDiamond" chance="0.25" />
+	  <output name="dustCoal" chance="0.05"/>
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Emerald Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelEmerald" />
+      <output name="gemEmerald" amount="2" />
+      <output name="gemEmerald" chance="0.25" />
+	  <output name="dustBeryllium" chance="0.05"/>
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Emerald Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackEmerald" />
+      <output name="gemEmerald" amount="2" />
+      <output name="gemEmerald" chance="0.25" />
+	  <output name="dustBeryllium" chance="0.05"/>
+      <output name="minecraft:netherrack" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Olivine Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreOlivine" />
+      <output name="gemOlivine" amount="2" />
+      <output name="gemOlivine" chance="0.25" />
+	  <output name="dustMagnesium" chance="0.05"/>
+      <output name="minecraft:cobblestone" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Olivine Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelOlivine" />
+      <output name="gemOlivine" amount="2" />
+      <output name="gemOlivine" chance="0.25" />
+	  <output name="dustMagnesium" chance="0.05"/>
+      <output name="minecraft:gravel" chance="0.15" />
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Magnesite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreMagnesite" />
+      <output name="dustMagnesite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustMagnesium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Magnesite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelMagnesite" />
+      <output name="dustMagnesite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustMagnesium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Pyrolusite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="orePyrolusite" />
+      <output name="dustPyrolusite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustManganese" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Pyrolusite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelPyrolusite" />
+      <output name="dustPyrolusite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustManganese" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Glauconite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGlauconite" />
+      <output name="dustGlauconite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustSodium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Glauconite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGlauconite" />
+      <output name="dustGlauconite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustSodium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Magnetite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreMagnetite" />
+      <output name="dustMagnetite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustGold" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Magnetite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelMagnetite" />
+      <output name="dustMagnetite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustGold" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Magnetite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackMagnetite" />
+      <output name="dustMagnetite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustGold" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: VanadiumMagnetite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreVanadiumMagnetite" />
+      <output name="dustVanadiumMagnetite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustVanadium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel VanadiumMagnetite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelVanadiumMagnetite" />
+      <output name="dustVanadiumMagnetite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustVanadium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether VanadiumMagnetite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackVanadiumMagnetite" />
+      <output name="dustVanadiumMagnetite" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustVanadium" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Gold Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGold" />
+      <output name="dustGold" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCopper" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nether Gold Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNetherrackGold" />
+      <output name="dustGold" amount="2" />
+      <output name="minecraft:netherrack" chance="0.15" />
+      <output name="dustCopper" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Nickel Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreNickel" />
+      <output name="dustNickel" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustPlatinum" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Nickel Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelNickel" />
+      <output name="dustNickel" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Pentlandite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="orePentlandite" />
+      <output name="dustPentlandite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Pentlandite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelPentlandite" />
+      <output name="dustPentlandite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Garnierite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGarnierite" />
+      <output name="dustGarnierite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Garnierite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelGarnierite" />
+      <output name="dustGarnierite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustNickel" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Cobaltite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreCobaltite" />
+      <output name="dustCobaltite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCobalt" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Cobaltite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelCobaltite" />
+      <output name="dustCobaltite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCobalt" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: YellowLimonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreYellowLimonite" />
+      <output name="dustYellowLimonite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel YellowLimonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelYellowLimonite" />
+      <output name="dustYellowLimonite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: BrownLimonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreBrownLimonite" />
+      <output name="dustBrownLimonite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel BrownLimonite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelBrownLimonite" />
+      <output name="dustBrownLimonite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: BandedIron Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreBandedIron" />
+      <output name="dustBandedIron" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel BandedIron Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelBandedIron" />
+      <output name="dustBandedIron" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustIron" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Malachite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreMalachite" />
+      <output name="dustMalachite" amount="2" />
+      <output name="minecraft:cobblestone" chance="0.15" />
+      <output name="dustCopper" chance="0.1"/>
+    </sagmilling>
+  </recipe>
+  
+  <recipe name="Sagmill: Gravel Malachite Ore" required="false">
+    <sagmilling energy="3600">
+      <input name="oreGravelMalachite" />
+      <output name="dustMalachite" amount="2" />
+      <output name="minecraft:gravel" chance="0.15" />
+      <output name="dustCopper" chance="0.1"/>
     </sagmilling>
   </recipe>
 

@@ -2199,9 +2199,9 @@ recipes.addShaped(<thermaldynamics:duct_0:9>,[
 
 recipes.remove(<thermaldynamics:duct_16>);
 recipes.addShaped(<thermaldynamics:duct_16>*6,[
-[<ore:plateCopper>,<ore:plateGlass>,<ore:plateCopper>],
+[<ore:plateCopper>,<ore:blockGlassColorless>,<ore:plateCopper>],
 [<ore:craftingToolHardHammer>,<ore:craftingToolBendingCylinder>,<ore:craftingToolWrench>],
-[<ore:plateCopper>,<ore:plateGlass>,<ore:plateCopper>]
+[<ore:plateCopper>,<ore:blockGlassColorless>,<ore:plateCopper>]
 ]);
 recipes.remove(<thermaldynamics:duct_16:1>);
 recipes.addShaped(<thermaldynamics:duct_16:1>*6,[
@@ -2396,17 +2396,6 @@ recipes.addShaped(<gregtech:meta_item_1:32604>,[
 [<ore:wireGtQuadrupleGraphene>,<ore:stickNeodymiumMagnetic>,<ore:wireGtQuadrupleGraphene>],
 [<ore:stickTungstenSteel>,<ore:wireGtQuadrupleGraphene>,<ore:cableGtSinglePlatinum>]
 ]);
-
-//Fancy Tanks
-recipes.remove(<ffs:block_fluid_valve>);
-recipes.addShaped(<ffs:block_fluid_valve>,[
-[<ore:plateWroughtIron>,<minecraft:iron_bars>,<ore:plateWroughtIron>],
-[<minecraft:iron_bars>,<gregtech:machine:2197>,<minecraft:iron_bars>],
-[<ore:plateWroughtIron>,<minecraft:iron_bars>,<ore:plateWroughtIron>]
-]);
-
-recipes.remove(<ffs:block_tank_computer>);
-recipes.addShapeless(<ffs:block_tank_computer>,[<ffs:block_fluid_valve>, <opencomputers:material:7>]);
 
 //Remove basic sieving, needs EV Tier
 recipes.remove(<exnihilocreatio:block_sieve>);

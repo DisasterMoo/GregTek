@@ -414,9 +414,9 @@ mixer.recipeBuilder().inputs([<ore:dustIron>,<ore:dustRedstone>]).outputs([<greg
 mixer.recipeBuilder().inputs([<ore:dustConductiveIron>,<ore:dustGlowstone>, <ore:dustGold>]).outputs([<gregtech:meta_item_1:2712>*3]).duration(100).EUt(120).buildAndRegister();
 mixer.recipeBuilder().inputs([<ore:dustEnergeticAlloy>,<ore:dustEnderPearl>]).outputs([<gregtech:meta_item_1:2713>*2]).duration(100).EUt(480).buildAndRegister();
 mixer.recipeBuilder().inputs([<ore:dustIron>,<ore:dustCoal>, <ore:dustObsidian>]).outputs([<gregtech:meta_item_1:2715>*3]).duration(100).EUt(120).buildAndRegister();
-mixer.recipeBuilder().inputs([<ore:dustIron>,<ore:dustEnderPearl>]).outputs([<gregtech:meta_item_1:2714>]).duration(100).EUt(120).buildAndRegister();
+mixer.recipeBuilder().inputs([<ore:dustIron>,<ore:dustEnderPearl>]).outputs([<gregtech:meta_item_1:2714>*2]).duration(100).EUt(120).buildAndRegister();
 mixer.recipeBuilder().inputs([<ore:dustGold>, <minecraft:soul_sand>]).outputs([<gregtech:meta_item_1:2716>]).duration(100).EUt(30).buildAndRegister();
-mixer.recipeBuilder().inputs([<ore:dustDarkSteel>, <ore:dustObsidian>, <ore:dustEndstone>]).outputs([<gregtech:meta_item_1:2717>]).duration(100).EUt(480).buildAndRegister();
+mixer.recipeBuilder().inputs([<ore:dustDarkSteel>, <ore:dustObsidian>, <ore:dustEndstone>]).outputs([<gregtech:meta_item_1:2717>*3]).duration(100).EUt(480).buildAndRegister();
 
 //Ethanol Stuff
 pyro_oven.recipeBuilder().inputs([<gregtech:meta_item_2:32570>*4]).property("circuit",1).fluidInputs([<liquid:water>*4000]).fluidOutputs([<liquid:biomass>*5000]).duration(160).EUt(100).buildAndRegister();

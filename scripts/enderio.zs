@@ -52,6 +52,26 @@ mods.jei.JEI.removeAndHide(<gregtech:meta_item_1:10718>);
 #Solidify silicon
 solidifier.recipeBuilder().fluidInputs([<liquid:silicon>*144]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_material:5>]).duration(20).EUt(8).buildAndRegister();
 
+#Solidify grinding balls
+recipes.remove(<enderio:item_alloy_ball:*>);
+recipes.remove(<enderio:item_material:57>);
+recipes.remove(<enderio:item_material:58>);
+recipes.remove(<enderio:item_material:59>);
+solidifier.recipeBuilder().fluidInputs([<liquid:electrical_steel>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:energetic_alloy>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:1>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:vibrant_alloy>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:2>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:redstone_alloy>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:3>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:conductive_iron>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:4>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:pulsating_iron>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:5>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:dark_steel>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:6>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:soularium>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:7>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:end_steel>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:8>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:construction_alloy>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_alloy_ball:9>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:signalum>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_material:57>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:enderium>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_material:58>]).duration(20).EUt(8).buildAndRegister();
+solidifier.recipeBuilder().fluidInputs([<liquid:lumium>*36]).notConsumable(<gregtech:meta_item_1:32307>).outputs([<enderio:item_material:59>]).duration(20).EUt(8).buildAndRegister();
+
+
 #Crafting Table
 recipes.remove(<enderio:item_yeta_wrench>);
 recipes.addShaped(<enderio:item_yeta_wrench>,[
@@ -299,7 +319,7 @@ blast_furnace.recipeBuilder().inputs([<ore:dustDarkSteel> * 1])
 furnace.remove(<enderio:item_alloy_ingot:5>);
 blast_furnace.recipeBuilder().inputs([<ore:dustPulsatingIron> * 1])
     .outputs([<enderio:item_alloy_ingot:5> * 1])
-    .property("temperature", 2200) //this is a minimal temperature at which the item will be smelted
+    .property("temperature", 1700) //this is a minimal temperature at which the item will be smelted
     .duration(3000)
     .EUt(120)
     .buildAndRegister();
