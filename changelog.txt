@@ -1,3 +1,12 @@
+1.11
+-Disabled log warning about messages from ftb utilities.
+-Disable cheap paper recipe.
+-Removed fragmented carbon(conflicts with coal pieces)
+-Removed LV superconductor from smelting in furnace.
+-Added Cutting machine recipe for black carpets
+-Added Custom GTCE materials to TConstruct tools.
+
+
 1.10
 -Changed versioning(too confusing), now we will use major dot minor
 -More ores can be processed in sag mill
@@ -5,6 +14,7 @@
 -Mixer now wields proper amount of dusts for end steel and pulsating iron
 -Changed recipe for forestry's portable analyser: now can be made in LV tier
 -Changed recipe for grinding balls: Solidify the alloys
+-Blood moon now only on 21th day(no random anymore)
 Mods removed:
 -Fancy Fluid Storage(In favor of tinker's tank)
 -Reborn Core

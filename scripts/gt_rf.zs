@@ -8,6 +8,9 @@ for i in 10650 to 10730{
 }
 
 #Add only basic tiers EU->RF
+recipes.remove(<gregtech:machine:10658>);
+recipes.remove(<gregtech:machine:10666>);
+recipes.remove(<gregtech:machine:10674>);
 recipes.addShaped(<gregtech:machine:10658>,[
 [<ore:wireGtSingleTin>, <ore:chest>, <ore:wireGtSingleTin>],
 [<ore:cableGtSingleRedAlloy>, <gregtech:machine:501>, <ore:cableGtSingleRedAlloy>],

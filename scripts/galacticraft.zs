@@ -23,6 +23,7 @@ mods.jei.JEI.removeAndHide(<extraplanets:ultimate_oxygen_compressor:4>);
 mods.jei.JEI.removeAndHide(<extraplanets:ultimate_oxygen_compressor>);
 mods.jei.JEI.removeAndHide(<extraplanets:cloth>);
 mods.jei.JEI.removeAndHide(<extraplanets:nuclear_bomb>);
+mods.jei.JEI.removeAndHide(<galacticraftplanets:carbon_fragments>);
 
 #Crafting Table
 recipes.remove(<extraplanets:anti_radiation>);

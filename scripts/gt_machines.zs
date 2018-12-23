@@ -384,7 +384,8 @@ blast_furnace.recipeBuilder().inputs([<ore:dustDesh> * 1])
     .duration(4000)
     .EUt(480)
     .buildAndRegister();
-	
+
+furnace.remove(<gregtech:meta_item_1:10704>);
 blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2704> * 1])
     .outputs([<gregtech:meta_item_1:10704> * 1])
     .property("temperature", 1200) //this is a minimal temperature at which the item will be smelted
@@ -517,6 +518,9 @@ reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:gas>*1000]).fl
 reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:naphtha>*1000]).fluidOutputs([<liquid:steamcracked_naphtha>*800]).EUt(30).duration(200).buildAndRegister();
 reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:light_fuel>*1000]).fluidOutputs([<liquid:cracked_light_fuel>*800]).EUt(30).duration(200).buildAndRegister();
 reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:heavy_fuel>*1000]).fluidOutputs([<liquid:cracked_heavy_fuel>*800]).EUt(30).duration(200).buildAndRegister();
+
+//Cutting black wool
+saw.recipeBuilder().inputs([<minecraft:wool:15>]).outputs([<minecraft:carpet:15>*3]).EUt(4).duration(50).buildAndRegister();
 
 //Easier drums
 var drumBronze = <gregtech:machine:2196>;
