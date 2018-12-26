@@ -18,6 +18,13 @@ uncompressed_coal_coke.register();
 uncompressed_lignite_coal.register();
 uncompressed_lignite_coke.register();
 
+//Custom extrude shapes
+var extrudeSmallGear = VanillaFactory.createItem("extrude_small_gear");
+var extrudeRotor = VanillaFactory.createItem("extrude_rotor");
+
+extrudeSmallGear.register();
+extrudeRotor.register();
+
 #Custom tool materials from GTCE
 #Vanadiumsteel
 val vanadiumsteelMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("vanadium_steel");

@@ -1,3 +1,41 @@
+//Change casting of extruder/mold shapes
+recipes.remove(<gregtech:meta_item_1:32300>);
+mods.tconstruct.Casting.addTableRecipe(<gregtech:meta_item_1:32300>, null, <liquid:steel>, 576);
+
+//Melt back
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32300>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32301>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32303>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32304>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32305>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32306>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32307>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32308>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32309>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32313>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32314>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32315>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32317>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32356>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32358>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32359>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32360>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32361>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32363>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32364>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32365>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32366>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32367>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32368>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32369>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32370>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32371>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32372>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32373>, 681);
+
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <ore:gearSmallSteel>, 490);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <ore:gearSmallSteelMagnetic>, 490);
+
 //Remove alloying
 mods.tconstruct.Alloy.removeRecipe(<liquid:invar>);
 mods.tconstruct.Alloy.removeRecipe(<liquid:constantan>);

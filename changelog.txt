@@ -1,3 +1,22 @@
+1.12
+-Updated quests
+-Remade small gears recipe
+-Added extruder shapes for rotors and small gears
+-Changed how to make extruder/mold: Casting steel in TConstruct
+-Added maceration of TC rare earth to GT rare earth dust.
+-Changed lootbag tables: small gears for circuits
+-Changed recipes for motors, use double cables for Hv, EV, and IV.
+-Tons of recipe changes for circuitry stuff
+-Removed Black Steel and Tungsten smelting in furnace.
+-Removed water + sulfur recipe for sulfuric acid.
+-Removed uncrafting table.
+Removed mods:
+GregBlockUtils
+ExCompressum
+ExNihilo
+
+
+
 1.11
 -Disabled log warning about messages from ftb utilities.
 -Disable cheap paper recipe.

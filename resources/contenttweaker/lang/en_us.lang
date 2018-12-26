@@ -4,3 +4,6 @@ item.contenttweaker.uncompressed_charcoal.name=Uncompressed Charcoal
 item.contenttweaker.uncompressed_coal_coke.name=Uncompressed Coal Coke
 item.contenttweaker.uncompressed_lignite_coal.name=Uncompressed Lignite Coal
 item.contenttweaker.uncompressed_lignite_coke.name=Uncompressed Lignite Coke
+
+item.contenttweaker.extrude_small_gear.name=Extruder Shape (Small gear)
+item.contenttweaker.extrude_rotor.name=Extruder Shape (Rotor)

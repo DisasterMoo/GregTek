@@ -31,25 +31,15 @@ val blast_furnace = RecipeMap.getByName("blast_furnace");
 val pyro_oven = RecipeMap.getByName("pyro");
 val distillery = RecipeMap.getByName("distillery");
 val fluid_heater = RecipeMap.getByName("fluid_heater");
+val extruder = RecipeMap.getByName("extruder");
 
 //Ex Nihilo
 hammer.recipeBuilder().inputs([<ore:gravel>]).outputs([<minecraft:sand>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<ore:sand>]).outputs([<exnihilocreatio:block_dust>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<ore:netherrack>]).outputs([<exnihilocreatio:block_netherrack_crushed>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<ore:endstone>]).outputs([<exnihilocreatio:block_endstone_crushed>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<appliedenergistics2:sky_stone_block>]).outputs([<exnihilocreatio:block_skystone_crushed>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<ore:stoneDiorite>]).outputs([<exnihilocreatio:block_diorite_crushed>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<ore:stoneAndesite>]).outputs([<exnihilocreatio:block_andesite_crushed>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<ore:stoneGranite>]).outputs([<exnihilocreatio:block_granite_crushed>]).duration(16).EUt(10).buildAndRegister();
-hammer.recipeBuilder().inputs([<exnihilocreatio:block_granite_crushed>]).outputs([<minecraft:sand:1>]).duration(16).EUt(10).buildAndRegister();
 
 //IF
 hammer.recipeBuilder().inputs([<ore:platePlastic>*2]).outputs([<industrialforegoing:plastic>]).duration(300).EUt(16).buildAndRegister();
 assembler.recipeBuilder().inputs([<ore:platePlastic>*8]).outputs([<teslacorelib:machine_case>]).property("circuit",8).duration(50).EUt(16).buildAndRegister();
 solidifier.recipeBuilder().fluidInputs([<liquid:if.pink_slime>*144]).notConsumable(<gregtech:meta_item_1:32306>).outputs([<industrialforegoing:pink_slime_ingot>]).duration(20).EUt(8).buildAndRegister();
-
-//Useful
-lathe.recipeBuilder().inputs([<minecraft:stone>]).outputs([<exnihilocreatio:item_material:6>,<gregtech:meta_item_1:1328>*2]).duration(500).EUt(16).buildAndRegister();
 
 //Fix
 macerator.recipeBuilder().inputs([<appliedenergistics2:material:7>]).outputs([<appliedenergistics2:material:8>]).duration(30).EUt(8).buildAndRegister();
@@ -164,10 +154,6 @@ macerator.recipeBuilder().inputs([<thermalfoundation:storage_alloy:7>]).outputs(
 recipes.remove(<appliedenergistics2:material>);
 furnace.remove(<gregtech:meta_item_1:8202>);
 furnace.addRecipe(<appliedenergistics2:material>,<ore:oreCertusQuartz>);
-furnace.addRecipe(<appliedenergistics2:material>,<gregblockutils:gb_meta_item:202>);
-furnace.addRecipe(<appliedenergistics2:material>,<gregblockutils:gb_meta_item:1202>);
-furnace.addRecipe(<appliedenergistics2:material>,<gregblockutils:gb_meta_item:2202>);
-furnace.addRecipe(<appliedenergistics2:material>,<gregblockutils:gb_meta_item:3202>);
 sifter.findRecipe(12800,[<gregtech:meta_item_1:6202>],[null]).remove();
 sifter.recipeBuilder().inputs([<ore:crushedPurifiedCertusQuartz>]).chancedOutput(<gregtech:meta_item_2:23202>,2000).chancedOutput(<gregtech:meta_item_2:25202>,100).chancedOutput(<gregtech:meta_item_1:4202>,5000).chancedOutput(<appliedenergistics2:material>,1500).chancedOutput(<gregtech:meta_item_2:22202>,4000).chancedOutput(<gregtech:meta_item_2:24202>,400).EUt(16).duration(800).buildAndRegister();
 autoclave.findRecipe(24,[<appliedenergistics2:material:2>],[<liquid:water>*200]).remove();
@@ -393,6 +379,10 @@ blast_furnace.recipeBuilder().inputs([<gregtech:meta_item_1:2704> * 1])
     .EUt(120)
     .buildAndRegister();
 	
+//Remove high eng metals in furance
+furnace.remove(<gregtech:meta_item_1:10231>);
+furnace.remove(<gregtech:meta_item_1:10074>);
+	
 //Solidify mercury
 solidifier.recipeBuilder().fluidInputs([<liquid:mercury>*3000]).notConsumable(<gregtech:meta_item_1:32301>).outputs([<extraplanets:compressed_mercury>]).duration(20).EUt(8).buildAndRegister();
 
@@ -486,6 +476,9 @@ for entry in assembler.recipes {
 	}
 }
 
+//Remove easy sulfuric acid
+reactor.findRecipe(30,[<gregtech:meta_item_1:2065>],[<liquid:water>*2000]).remove();
+
 //Cracked fuels nerf
 for entry in reactor.recipes {
     for liquid in entry.fluidInputs {
@@ -574,3 +567,96 @@ assembler.recipeBuilder()
   .duration(160)
   .EUt(1920)
   .buildAndRegister();
+  
+//Remade small gears
+recipes.remove(<gregtech:meta_item_2:17001>);
+recipes.addShaped(<gregtech:meta_item_2:17001>,[
+[null,<ore:stickAluminium>,null],
+[<ore:craftingToolHardHammer>,<ore:plateAluminium>,<ore:craftingToolWireCutter>],
+[null,<ore:stickAluminium>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17072>);
+recipes.addShaped(<gregtech:meta_item_2:17072>,[
+[null,<ore:stickTitanium>,null],
+[<ore:craftingToolHardHammer>,<ore:plateTitanium>,<ore:craftingToolWireCutter>],
+[null,<ore:stickTitanium>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17183>);
+recipes.addShaped(<gregtech:meta_item_2:17183>,[
+[null,<ore:stickStainlessSteel>,null],
+[<ore:craftingToolHardHammer>,<ore:plateStainlessSteel>,<ore:craftingToolWireCutter>],
+[null,<ore:stickStainlessSteel>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17184>);
+recipes.addShaped(<gregtech:meta_item_2:17184>,[
+[null,<ore:stickSteel>,null],
+[<ore:craftingToolHardHammer>,<ore:plateSteel>,<ore:craftingToolWireCutter>],
+[null,<ore:stickSteel>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17298>);
+recipes.addShaped(<gregtech:meta_item_2:17298>,[
+[null,<ore:stickSteelMagnetic>,null],
+[<ore:craftingToolHardHammer>,<ore:plateSteelMagnetic>,<ore:craftingToolWireCutter>],
+[null,<ore:stickSteelMagnetic>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17235>);
+recipes.addShaped(<gregtech:meta_item_2:17235>,[
+[null,<ore:stickTungstenSteel>,null],
+[<ore:craftingToolHardHammer>,<ore:plateTungstenSteel>,<ore:craftingToolWireCutter>],
+[null,<ore:stickTungstenSteel>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17302>);
+recipes.addShaped(<gregtech:meta_item_2:17302>,[
+[null,<ore:stickHssg>,null],
+[<ore:craftingToolHardHammer>,<ore:plateHssg>,<ore:craftingToolWireCutter>],
+[null,<ore:stickHssg>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17303>);
+recipes.addShaped(<gregtech:meta_item_2:17303>,[
+[null,<ore:stickHsse>,null],
+[<ore:craftingToolHardHammer>,<ore:plateHsse>,<ore:craftingToolWireCutter>],
+[null,<ore:stickHsse>,null]
+]);
+
+recipes.remove(<gregtech:meta_item_2:17972>);
+recipes.addShaped(<gregtech:meta_item_2:17303>,[
+[null,<ore:stickNeutronium>,null],
+[<ore:craftingToolHardHammer>,<ore:plateNeutronium>,<ore:craftingToolWireCutter>],
+[null,<ore:stickNeutronium>,null]
+]);
+
+//Add extruder for small gears and rotors
+extruder.recipeBuilder().inputs([<ore:ingotAluminium>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17001>]).duration(108).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotTitanium>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17072>]).duration(108).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotStainlessSteel>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17183>]).duration(108).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotSteel>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17184>]).duration(108).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotSteelMagnetic>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17298>]).duration(108).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotNeutronium>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17972>]).duration(108).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotTungstenSteel>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17235>]).duration(108).EUt(256).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotHssg>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17302>]).duration(108).EUt(256).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotHsse>]).notConsumable(<contenttweaker:extrude_small_gear>).outputs([<gregtech:meta_item_2:17303>]).duration(108).EUt(256).buildAndRegister();
+
+extruder.recipeBuilder().inputs([<ore:ingotChrome>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18016>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotTin>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18071>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotTitanium>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18072>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotBronze>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18095>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotStainlessSteel>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18183>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotSteel>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18184>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotSteelMagnetic>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18298>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotNeutronium>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18972>]).duration(540).EUt(64).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotOsmium>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18047>]).duration(540).EUt(256).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotIridium>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18032>]).duration(540).EUt(256).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotTungstenSteel>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18235>]).duration(540).EUt(256).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotHssg>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18302>]).duration(540).EUt(256).buildAndRegister();
+extruder.recipeBuilder().inputs([<ore:ingotHsse>*5]).notConsumable(<contenttweaker:extrude_rotor>).outputs([<gregtech:meta_item_2:18303>]).duration(540).EUt(256).buildAndRegister();
+
+
+//Macerate rare earth
+macerator.recipeBuilder().inputs([<thaumcraft:nugget:10>]).outputs([<gregtech:meta_item_1:2326>*4]).duration(30).EUt(8).buildAndRegister();

@@ -560,74 +560,6 @@ mods.jei.JEI.removeAndHide(<minecraft:diamond_shovel>);
 //You can't cut glass with your bare hands
 recipes.remove(<minecraft:glass_pane:*>);
 
-//Ex Nihilo
-//Gregify Ex Nihilo
-recipes.remove(<ore:stickStone>);
-recipes.addShaped(<exnihilocreatio:item_material:6>,[
-[<ore:craftingToolFile>],
-[null,<ore:stone>]
-]);
-recipes.remove(<exnihilocreatio:item_material:7>);
-recipes.addShaped(<exnihilocreatio:item_material:7>,[
-[<ore:stickStone>,<ore:stone>,<ore:stickStone>],
-[<ore:stone>,<ore:craftingToolScrewdriver>,<ore:stone>],
-[<ore:stickStone>,<ore:stone>,<ore:stickStone>]
-]);
-recipes.remove(<exnihilocreatio:item_mesh:2>);
-recipes.addShaped(<exnihilocreatio:item_mesh:2>,[
-[<ore:stickTinAlloy>,<minecraft:string>,<ore:stickTinAlloy>],
-[<minecraft:string>,<ore:stickTinAlloy>,<minecraft:string>],
-[<ore:stickTinAlloy>,<minecraft:string>,<ore:stickTinAlloy>]
-]);
-recipes.remove(<exnihilocreatio:item_mesh:3>);
-recipes.addShaped(<exnihilocreatio:item_mesh:3>,[
-[<ore:stickSteel>,<minecraft:string>,<ore:stickSteel>],
-[<minecraft:string>,<ore:stickSteel>,<minecraft:string>],
-[<ore:stickSteel>,<minecraft:string>,<ore:stickSteel>]
-]);
-recipes.remove(<exnihilocreatio:item_mesh:4>);
-recipes.addShaped(<exnihilocreatio:item_mesh:4>,[
-[<ore:stickAluminium>,<minecraft:string>,<ore:stickAluminium>],
-[<minecraft:string>,<ore:stickAluminium>,<minecraft:string>],
-[<ore:stickAluminium>,<minecraft:string>,<ore:stickAluminium>]
-]);
-
-recipes.remove(<exnihilocreatio:block_end_cake>);
-recipes.addShaped(<exnihilocreatio:block_end_cake>,[
-[<forge:bucketfilled>.withTag({FluidName: "if.pink_slime", Amount: 1000}).onlyWithTag({FluidName: "if.pink_slime", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "if.pink_slime", Amount: 1000}).onlyWithTag({FluidName: "if.pink_slime", Amount: 1000}),<forge:bucketfilled>.withTag({FluidName: "if.pink_slime", Amount: 1000}).onlyWithTag({FluidName: "if.pink_slime", Amount: 1000})],
-[<ore:gemEnderEye>,<gregtech:meta_item_1:32725>,<ore:gemEnderEye>],
-[<ore:dustHsss>,<ore:dustNaquadria>,<ore:dustHsss>]
-]);
-
-//Only the stone hammer
-mods.jei.JEI.removeAndHide(<exnihilocreatio:hammer_wood>);
-mods.jei.JEI.removeAndHide(<exnihilocreatio:hammer_iron>);
-mods.jei.JEI.removeAndHide(<exnihilocreatio:hammer_gold>);
-mods.jei.JEI.removeAndHide(<exnihilocreatio:hammer_diamond>);
-mods.jei.JEI.removeAndHide(<exnihilocreatio:block_crucible_wood>);
-
-//Stone Hammer Change
-recipes.remove(<exnihilocreatio:hammer_stone>);
-recipes.addShaped(<exnihilocreatio:hammer_stone>,[
-[<minecraft:cobblestone>,<minecraft:cobblestone>],
-[<minecraft:cobblestone>,<minecraft:cobblestone>,<minecraft:stick>],
-[<minecraft:cobblestone>,<minecraft:cobblestone>]
-]);
-
-//OreDict Dool Recipes
-recipes.remove(<exnihilocreatio:item_doll:5>);
-recipes.addShaped(<exnihilocreatio:item_doll:5>,[
-[<ore:dustSaltpeter>,<ore:dustRedstone>,<ore:dustSaltpeter>],
-[<ore:dustGlowstone>,<exnihilocreatio:item_material:5>,<ore:dustGlowstone>],
-[<ore:dustSaltpeter>,<minecraft:nether_wart>,<ore:dustSaltpeter>]
-]);
-recipes.remove(<exnihilocreatio:item_doll:6>);
-recipes.addShaped(<exnihilocreatio:item_doll:6>,[
-[<ore:dustObsidian>,<ore:dustRedstone>,<ore:dustObsidian>],
-[<ore:dustGlowstone>,<exnihilocreatio:item_material:5>,<ore:dustGlowstone>],
-[<ore:dustObsidian>,<minecraft:nether_wart>,<ore:dustObsidian>]
-]);
-
 //AE2
 //GT Silicon only
 furnace.remove(<appliedenergistics2:material:5>);
@@ -1357,30 +1289,6 @@ recipes.addShaped(<spikemod:diamond_spike>*4,[
 [<ore:toolHeadSwordDiamond>,<ore:blockDiamond>,<ore:toolHeadSwordDiamond>]
 ]);
 
-//Ex Compressum
-//Remove Compressed Stuff
-mods.jei.JEI.removeAndHide(<excompressum:heavy_sieve:*>);
-mods.jei.JEI.removeAndHide(<excompressum:compressed_hammer_wood>);
-mods.jei.JEI.removeAndHide(<excompressum:compressed_hammer_stone>);
-mods.jei.JEI.removeAndHide(<excompressum:compressed_hammer_iron>);
-mods.jei.JEI.removeAndHide(<excompressum:compressed_hammer_gold>);
-mods.jei.JEI.removeAndHide(<excompressum:compressed_hammer_diamond>);
-mods.jei.JEI.hide(<excompressum:double_compressed_diamond_hammer>);
-mods.jei.JEI.removeAndHide(<excompressum:compressed_crook>);
-
-//Remove Useless Stuff
-mods.jei.JEI.removeAndHide(<excompressum:auto_hammer>);
-mods.jei.JEI.removeAndHide(<excompressum:auto_compressed_hammer>);
-mods.jei.JEI.removeAndHide(<excompressum:auto_sieve>);
-mods.jei.JEI.removeAndHide(<excompressum:bat_zapper>);
-mods.jei.JEI.removeAndHide(<excompressum:ore_smasher>);
-mods.jei.JEI.removeAndHide(<excompressum:ugly_steel_plating>);
-mods.jei.JEI.removeAndHide(<excompressum:auto_heavy_sieve>);
-mods.jei.JEI.removeAndHide(<excompressum:auto_compressor>);
-mods.jei.JEI.removeAndHide(<excompressum:auto_compressor_rationing>);
-mods.jei.JEI.hide(<excompressum:chicken_stick>);
-mods.jei.JEI.hide(<excompressum:iron_mesh>);
-
 //Storage Drawers
 //Drawer Recipe Changes
 mods.jei.JEI.removeAndHide(<storagedrawers:basicdrawers:*>);
@@ -1889,13 +1797,6 @@ recipes.addShaped(<minecraft:hopper_minecart>,[
 [<minecraft:minecart>]
 ]);
 
-recipes.remove(<exnihilocreatio:block_auto_sifter>);
-recipes.addShaped(<exnihilocreatio:block_auto_sifter>,[
-[<ore:gearStone>,<pneumaticcraft:omnidirectional_hopper>,<ore:gearStone>],
-[<minecraft:piston>,<exnihilocreatio:block_axle_stone>,<minecraft:piston>],
-[<ore:gearStone>,<pneumaticcraft:omnidirectional_hopper>,<ore:gearStone>]
-]);
-
 recipes.remove(<industrialforegoing:item_splitter>);
 recipes.addShaped(<industrialforegoing:item_splitter>,[
 [<industrialforegoing:plastic>,<ore:chestWood>,<industrialforegoing:plastic>],
@@ -2378,31 +2279,23 @@ recipes.addShaped(<gregtech:meta_item_1:32601>,[
 
 recipes.remove(<gregtech:meta_item_1:32602>);
 recipes.addShaped(<gregtech:meta_item_1:32602>,[
-[<ore:cableGtSingleGold>,<ore:wireGtQuadrupleElectrum>,<ore:stickStainlessSteel>],
+[<ore:cableGtDoubleSilver>,<ore:wireGtQuadrupleElectrum>,<ore:stickStainlessSteel>],
 [<ore:wireGtQuadrupleElectrum>,<ore:stickSteelMagnetic>,<ore:wireGtQuadrupleElectrum>],
-[<ore:stickStainlessSteel>,<ore:wireGtQuadrupleElectrum>,<ore:cableGtSingleGold>]
+[<ore:stickStainlessSteel>,<ore:wireGtQuadrupleElectrum>,<ore:cableGtDoubleSilver>]
 ]);
 
 recipes.remove(<gregtech:meta_item_1:32603>);
 recipes.addShaped(<gregtech:meta_item_1:32603>,[
-[<ore:cableGtSingleAluminium>,<ore:wireGtQuadrupleAnnealedCopper>,<ore:stickTitanium>],
+[<ore:cableGtDoubleAluminium>,<ore:wireGtQuadrupleAnnealedCopper>,<ore:stickTitanium>],
 [<ore:wireGtQuadrupleAnnealedCopper>,<ore:stickNeodymiumMagnetic>,<ore:wireGtQuadrupleAnnealedCopper>],
-[<ore:stickTitanium>,<ore:wireGtQuadrupleAnnealedCopper>,<ore:cableGtSingleAluminium>]
+[<ore:stickTitanium>,<ore:wireGtQuadrupleAnnealedCopper>,<ore:cableGtDoubleAluminium>]
 ]);
 
 recipes.remove(<gregtech:meta_item_1:32604>);
 recipes.addShaped(<gregtech:meta_item_1:32604>,[
-[<ore:cableGtSinglePlatinum>,<ore:wireGtQuadrupleGraphene>,<ore:stickTungstenSteel>],
+[<ore:cableGtDoublePlatinum>,<ore:wireGtQuadrupleGraphene>,<ore:stickTungstenSteel>],
 [<ore:wireGtQuadrupleGraphene>,<ore:stickNeodymiumMagnetic>,<ore:wireGtQuadrupleGraphene>],
-[<ore:stickTungstenSteel>,<ore:wireGtQuadrupleGraphene>,<ore:cableGtSinglePlatinum>]
-]);
-
-//Remove basic sieving, needs EV Tier
-recipes.remove(<exnihilocreatio:block_sieve>);
-recipes.addShaped(<exnihilocreatio:block_sieve>,[
-[<ore:plankWood>,null,<ore:plankWood>],
-[<ore:plankWood>,<ore:plateDraconium>,<ore:plankWood>],
-[<ore:stickNaquadahAlloy>,null,<ore:stickNaquadahAlloy>]
+[<ore:stickTungstenSteel>,<ore:wireGtQuadrupleGraphene>,<ore:cableGtDoublePlatinum>]
 ]);
 
 //Inf. Water Sources
@@ -2586,23 +2479,9 @@ recipes.addShaped(<gregtech:meta_tool:12>.withTag({"GT.ToolStats": {PrimaryMater
 //Melter
 mods.jei.JEI.removeAndHide(<tcomplement:melter>);
 mods.jei.JEI.removeAndHide(<tcomplement:melter:8>);
+mods.jei.JEI.removeAndHide(<twilightforest:uncrafting_table>);
 
-recipes.remove(<twilightforest:uncrafting_table>);
-recipes.addShaped(<twilightforest:uncrafting_table>, [
-[<gregtech:meta_item_1:32652>, <ore:workbench>, <gregtech:meta_item_1:32652>], 
-[<ore:circuitGAExtreme>, <gregtech:machine:503>, <ore:circuitGAExtreme>], 
-[<ore:craftingFilter>, <ore:circuitGAExtreme>, <ore:craftingFilter>]
-]);
-
-//Un-Crafting table
-recipes.remove(<twilightforest:uncrafting_table>);
-recipes.addShaped(<twilightforest:uncrafting_table>, [
-[<gregtech:meta_item_1:32652>, <ore:workbench>, <gregtech:meta_item_1:32652>], 
-[<ore:circuitGAExtreme>, <gregtech:machine:503>, <ore:circuitGAExtreme>], 
-[<ore:craftingFilter>, <ore:circuitGAExtreme>, <ore:craftingFilter>]
-]);
-
-//Remade distillery(not using shitty thing)
+//Remade distillery
 recipes.remove(<gregtech:machine:230>); //LV
 recipes.addShaped(<gregtech:machine:230>, [
 [<minecraft:glass>, <ore:pipeMediumBronze>, <minecraft:glass>], 
@@ -2683,9 +2562,6 @@ recipes.addShaped(<randomthings:chunkanalyzer>, [
 [<ore:plateTungstenSteel>, <galacticraftcore:basic_item>, <ore:plateTungstenSteel>]
 ]);
 
-mods.jei.JEI.removeAndHide(<exnihilocreatio:block_crucible>);
-mods.jei.JEI.removeAndHide(<exnihilocreatio:block_crucible:1>);
-
 mods.jei.JEI.removeAndHide(<nuclearcraft:fluid_steam>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:fluid_high_pressure_steam>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:fluid_exhaust_steam>);
@@ -2719,3 +2595,50 @@ recipes.addShapeless(<pneumaticcraft:omnidirectional_hopper>,[<minecraft:hopper>
 <ore:oreAluminum>.remove(<galacticraftcore:basic_block_core:7>);
 <ore:oreAluminum>.remove(<galacticraftplanets:venus:6>);
 <ore:ingotAluminum>.remove(<gregtech:meta_item_1:10001>);
+
+//new molds
+recipes.addShaped(<contenttweaker:extrude_small_gear>,[
+[null, null, null],
+[null, null, null],
+[<ore:craftingToolWireCutter>,null,<gregtech:meta_item_1:32300>]
+]);
+
+recipes.addShaped(<contenttweaker:extrude_rotor>,[
+[null, null, <ore:craftingToolWireCutter>],
+[null, null, null],
+[<gregtech:meta_item_1:32300>,null,null]
+]);
+
+#PackagedAuto
+//PackagedAuto
+//General recipes
+recipes.remove(<packagedauto:package_component>);
+recipes.addShaped(<packagedauto:package_component>,[
+[<ore:stickTitanium>,<ore:plateWood>,<ore:stickTitanium>],
+[<ore:plateWood>,<ore:gemEnderEye>,<ore:plateWood>],
+[<ore:stickTitanium>,<ore:plateWood>,<ore:stickTitanium>]
+]);
+recipes.remove(<packagedauto:recipe_holder>);
+recipes.addShaped(<packagedauto:recipe_holder>,[
+[null,<ore:plateAnnealedCopper>],
+[<ore:plateAnnealedCopper>,<appliedenergistics2:material:52>,<ore:plateAnnealedCopper>],
+[null, <packagedauto:package_component>]
+]);
+recipes.remove(<packagedauto:unpackager>);
+recipes.addShaped(<packagedauto:unpackager>,[
+[<ore:plateBlackSteel>,<packagedauto:package_component>,<ore:plateBlackSteel>],
+[<ore:plateRedstone>,<ore:chestWood>,<ore:plateRedstone>],
+[<ore:plateBlackSteel>,<pneumaticcraft:omnidirectional_hopper>,<ore:plateBlackSteel>]
+]);
+recipes.remove(<packagedauto:packager>);
+recipes.addShaped(<packagedauto:packager>,[
+[<ore:plateBlackSteel>,<packagedauto:package_component>,<ore:plateBlackSteel>],
+[<ore:plateRedstone>,<ore:craftingTableWood>,<ore:plateRedstone>],
+[<ore:plateBlackSteel>,<minecraft:piston>,<ore:plateBlackSteel>]
+]);
+recipes.remove(<packagedauto:encoder>);
+recipes.addShaped(<packagedauto:encoder>,[
+[<ore:plateBlackSteel>,<packagedauto:package_component>,<ore:plateBlackSteel>],
+[<ore:craftingTableWood>,<appliedenergistics2:material:24>,<ore:craftingTableWood>],
+[<ore:plateBlackSteel>,<minecraft:comparator>,<ore:plateBlackSteel>]
+]);
