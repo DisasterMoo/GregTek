@@ -9,6 +9,7 @@ val diodes = <ore:anyDiode>;
 val resistors = <ore:anyResistor>;
 val transistors = <ore:anyTransistor>;
 val capacitors = <ore:anyCapacitor>;
+val anyCarbon = <ore:anyCarbon>;
 
 diodes.add(<gtadditions:ga_meta_item:32019>);
 diodes.add(<gtadditions:ga_meta_item:32026>);
@@ -22,10 +23,19 @@ resistors.add(<gtadditions:ga_meta_item:32028>);
 capacitors.add(<gtadditions:ga_meta_item:32020>);
 capacitors.add(<gtadditions:ga_meta_item:32027>);
 
+anyCarbon.add(<gregtech:meta_item_1:2101>);
+anyCarbon.add(<gregtech:meta_item_1:2012>);
+anyCarbon.add(<gregtech:meta_item_1:2106>);
+anyCarbon.add(<gregtech:meta_item_1:2211>);
+anyCarbon.add(<thermalfoundation:material:769>);
+
 #Remove from assembler
 for entry in assembler.recipes {
     for entryOutputs in entry.outputs {
 		if(entryOutputs has <gtadditions:ga_meta_item:32018>){
+			entry.remove();
+		}
+		if(entryOutputs has <gtadditions:ga_meta_item:32024>){
 			entry.remove();
 		}
 		if(entryOutputs has <gtadditions:ga_meta_item:32019>){
@@ -61,8 +71,15 @@ for entry in circuit_assembler.recipes {
 		if(entryOutputs has <gtadditions:ga_meta_item:32041>){
 			entry.remove();
 		}
+		if(entryOutputs has <gtadditions:ga_meta_item:32715>){
+			entry.remove();
+		}
 	}
 }
+
+#Remove gallium arsenide
+blast_furnace.findRecipe(120,[<gregtech:meta_item_1:935>], null).remove();
+blast_furnace.findRecipe(120,[<gregtech:meta_item_1:2935>], null).remove();
 
 #Remove from blast_furnace
 for entry in blast_furnace.recipes {
@@ -115,6 +132,26 @@ assembler.recipeBuilder()
     .inputs([<gtadditions:ga_meta_item:32022>, <ore:stickSteel>, <ore:wireGtSingleAnnealedCopper>])
 	.fluidInputs([<liquid:redstone_alloy>*36])
 	.outputs(<gtadditions:ga_meta_item:32018>*4)
+	.EUt(8).duration(120).buildAndRegister();
+	
+#Resistor
+recipes.remove(<gtadditions:ga_meta_item:32024>);
+recipes.addShaped(<gtadditions:ga_meta_item:32024>,[
+[<gregtech:meta_item_1:32627>,<ore:wireGtSingleCopper>,<gregtech:meta_item_1:32627>],
+[<ore:wireFineCopper>,anyCarbon,<ore:wireFineCopper>],
+[<gregtech:meta_item_1:32627>,<ore:wireGtSingleCopper>,<gregtech:meta_item_1:32627>]
+]);
+
+assembler.recipeBuilder()
+    .inputs([anyCarbon, <ore:wireGtSingleCopper>*4, <ore:wireFineCopper>*4])
+	.fluidInputs([<liquid:glue>*200])
+	.outputs(<gtadditions:ga_meta_item:32018>*4)
+	.EUt(8).duration(120).buildAndRegister();
+	
+assembler.recipeBuilder()
+    .inputs([anyCarbon, <ore:wireGtSingleAnnealedCopper>*4, <ore:wireFineAnnealedCopper>*4])
+	.fluidInputs([<liquid:glue>*200])
+	.outputs(<gtadditions:ga_meta_item:32018>*8)
 	.EUt(8).duration(120).buildAndRegister();
 	
 #Good Circuit
@@ -216,26 +253,51 @@ circuit_assembler.recipeBuilder()
 	.EUt(60).duration(200).buildAndRegister();
 //SoC Recipe
 circuit_assembler.recipeBuilder()
-    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineRedAlloy>*2])
+    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineRedAlloy>*2, <ore:boltAnnealedCopper>*2])
 	.fluidInputs([<liquid:soldering_alloy>*72])
 	.outputs([<gregtech:meta_item_1:32703>])
 	.EUt(2400).duration(30).buildAndRegister();
 	
 circuit_assembler.recipeBuilder()
-    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineRedAlloy>*2])
+    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineRedAlloy>*2, <ore:boltAnnealedCopper>*2])
 	.fluidInputs([<liquid:tin>*144])
 	.outputs([<gregtech:meta_item_1:32703>])
 	.EUt(2400).duration(30).buildAndRegister();
 	
+#Microprocessor(MV)
+circuit_assembler.recipeBuilder()
+    .inputs([resistors*2, capacitors*2, transistors*2, <gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32045>, <ore:wireFineCopper>*2])
+	.fluidInputs([<liquid:soldering_alloy>*72])
+	.outputs([<gregtech:meta_item_1:32715>*2])
+	.EUt(60).duration(200).buildAndRegister();
+	
+circuit_assembler.recipeBuilder()
+    .inputs([resistors*2, capacitors*2, transistors*2, <gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32045>, <ore:wireFineCopper>*2])
+	.fluidInputs([<liquid:tin>*144])
+	.outputs([<gregtech:meta_item_1:32715>*2])
+	.EUt(60).duration(200).buildAndRegister();
+//SoC Recipe
+circuit_assembler.recipeBuilder()
+    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineCopper>*2, <ore:boltCopper>*2])
+	.fluidInputs([<liquid:soldering_alloy>*72])
+	.outputs([<gregtech:meta_item_1:32715>*2])
+	.EUt(2400).duration(30).buildAndRegister();
+	
+circuit_assembler.recipeBuilder()
+    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineCopper>*2, <ore:boltCopper>*2])
+	.fluidInputs([<liquid:tin>*144])
+	.outputs([<gregtech:meta_item_1:32715>*2])
+	.EUt(2400).duration(30).buildAndRegister();
+	
 #Workstation(MV)
 circuit_assembler.recipeBuilder()
-    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32001>*2, diodes*4, <gtadditions:ga_meta_item:32052>*8, <ore:wireFineElectrum>*16])
+    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32001>*2, diodes*4, <gtadditions:ga_meta_item:32052>*8, <ore:wireFineElectrum>*16, <ore:boltPlatinum>*16])
 	.fluidInputs([<liquid:soldering_alloy>*144])
 	.outputs([<gregtech:meta_item_1:32704>])
 	.EUt(90).duration(400).buildAndRegister();
 	
 circuit_assembler.recipeBuilder()
-    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32001>*2, diodes*4, <gtadditions:ga_meta_item:32052>*8, <ore:wireFineElectrum>*16])
+    .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32001>*2, diodes*4, <gtadditions:ga_meta_item:32052>*8, <ore:wireFineElectrum>*16, <ore:boltPlatinum>*16])
 	.fluidInputs([<liquid:tin>*288])
 	.outputs([<gregtech:meta_item_1:32704>])
 	.EUt(90).duration(400).buildAndRegister();

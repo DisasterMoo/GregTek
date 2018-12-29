@@ -2427,12 +2427,6 @@ recipes.addShaped(<gregtech:machine:18>,[
 
 recipes.addShaped(<gtadditions:ga_meta_item:32024>*2,[
 [null,<minecraft:paper>,null],
-[<ore:wireFineCopper>,<ore:dustCharcoal>,<ore:wireFineCopper>],
-[null,<minecraft:paper>,null]
-]);
-
-recipes.addShaped(<gtadditions:ga_meta_item:32024>*2,[
-[null,<minecraft:paper>,null],
 [<ore:wireGtSingleCopper>,<ore:dustCharcoal>,<ore:wireGtSingleCopper>],
 [null,<minecraft:paper>,null]
 ]);
@@ -2600,7 +2594,7 @@ recipes.addShapeless(<pneumaticcraft:omnidirectional_hopper>,[<minecraft:hopper>
 recipes.addShaped(<contenttweaker:extrude_small_gear>,[
 [null, null, null],
 [null, null, null],
-[<ore:craftingToolWireCutter>,null,<gregtech:meta_item_1:32300>]
+[<ore:craftingToolWireCutter>,<gregtech:meta_item_1:32300>,null]
 ]);
 
 recipes.addShaped(<contenttweaker:extrude_rotor>,[

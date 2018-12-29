@@ -32,6 +32,8 @@ mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32
 mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32371>, 681);
 mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32372>, 681);
 mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <gregtech:meta_item_1:32373>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <contenttweaker:extrude_small_gear>, 681);
+mods.tconstruct.Melting.addRecipe(<liquid:steel> * 576, <contenttweaker:extrude_rotor>, 681);
 
 mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <ore:gearSmallSteel>, 490);
 mods.tconstruct.Melting.addRecipe(<liquid:steel> * 144, <ore:gearSmallSteelMagnetic>, 490);

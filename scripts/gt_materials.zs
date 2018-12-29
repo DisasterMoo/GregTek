@@ -48,10 +48,10 @@ val ivsuperconductor = MaterialRegistry.createIngotMaterial(708, "superconductor
 val luvsuperconductor = MaterialRegistry.createIngotMaterial(709, "superconductor_luv", 0x820040, "dull", 1, null, 1, 1024, 6000);
 lvsuperconductor.setCableProperties(32, 1, 0);
 mvsuperconductor.setCableProperties(128, 1, 0);
-hvsuperconductor.setCableProperties(512, 1, 0);
-evsuperconductor.setCableProperties(2048, 1, 0);
-ivsuperconductor.setCableProperties(8192, 1, 0);
-luvsuperconductor.setCableProperties(32768, 1, 0);
+hvsuperconductor.setCableProperties(512, 2, 0);
+evsuperconductor.setCableProperties(2048, 2, 0);
+ivsuperconductor.setCableProperties(8192, 4, 0);
+luvsuperconductor.setCableProperties(32768, 4, 0);
 
 //Add EnderIO Materials
 val redstone_alloy = MaterialRegistry.createIngotMaterial(710, "redstone_alloy", 0xFF7272, "metallic", 2);

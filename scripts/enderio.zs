@@ -224,11 +224,28 @@ recipes.addShaped(<enderio:item_magnet>,[
 recipes.remove(<enderio:item_basic_item_filter>);
 assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32729>, <minecraft:iron_bars>]).outputs([<enderio:item_basic_item_filter>]).duration(100).EUt(30).buildAndRegister();
 
+recipes.remove(<enderio:item_fluid_filter>);
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32729>, <minecraft:bucket>]).outputs([<enderio:item_fluid_filter>]).duration(100).EUt(30).buildAndRegister();
+
+
+recipes.remove(<enderio:item_big_item_filter>);
+assembler.recipeBuilder().inputs([<enderio:item_advanced_item_filter>, <enderio:item_material:45>]).outputs([<enderio:item_big_item_filter>]).duration(100).EUt(120).buildAndRegister();
+
+recipes.remove(<enderio:item_material:60>);
+assembler.recipeBuilder().inputs([<enderio:item_basic_item_filter>, <ore:boltRedstoneAlloy>*8]).outputs([<enderio:item_material:60>]).duration(300).EUt(30).buildAndRegister();
+
 recipes.remove(<enderio:item_extract_speed_upgrade>);
 assembler.recipeBuilder().inputs([<enderio:item_basic_item_filter>, <gregtech:meta_item_1:32640>]).outputs([<enderio:item_extract_speed_upgrade>]).duration(100).EUt(30).buildAndRegister();
 
 recipes.remove(<enderio:item_advanced_item_filter>);
 assembler.recipeBuilder().inputs([<enderio:item_basic_item_filter>, <ore:skullZombieController>]).outputs([<enderio:item_advanced_item_filter>]).duration(300).EUt(64).buildAndRegister();
+
+recipes.remove(<enderio:item_mod_item_filter>);
+assembler.recipeBuilder().inputs([<enderio:item_basic_item_filter>, <ore:skullZombieElectrode>]).outputs([<enderio:item_mod_item_filter>]).duration(300).EUt(64).buildAndRegister();
+
+recipes.remove(<enderio:item_power_item_filter>);
+assembler.recipeBuilder().inputs([<enderio:item_basic_item_filter>, <enderio:item_basic_capacitor>]).outputs([<enderio:item_power_item_filter>]).duration(300).EUt(64).buildAndRegister();
+
 
 recipes.remove(<enderio:item_existing_item_filter>);
 assembler.recipeBuilder().inputs([<enderio:item_advanced_item_filter>, <ore:circuitData>]).outputs([<enderio:item_existing_item_filter>]).duration(300).EUt(120).buildAndRegister();

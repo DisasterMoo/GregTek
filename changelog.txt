@@ -1,15 +1,25 @@
+1.13
+-Added melting for small gear and rotor extruder shapes in tconstruct forge
+-Disable gallium arsenide ingot in blast furnace(conflicts with silicon boule)
+-Changed small gear recipes(conflicted with axe head)
+-Changed amperage of superconductors
+-Changed microprocessor recipe
+-Enderpearl dusts fluid extract to resonant ender
+-Changed recipe for some enderio filters
+-Changed recipe for resistors
+
 1.12
 -Updated quests
 -Remade small gears recipe
 -Added extruder shapes for rotors and small gears
 -Changed how to make extruder/mold: Casting steel in TConstruct
--Added maceration of TC rare earth to GT rare earth dust.
+-Added maceration of TC rare earth to GT rare earth dust
 -Changed lootbag tables: small gears for circuits
--Changed recipes for motors, use double cables for Hv, EV, and IV.
+-Changed recipes for motors, use double cables for Hv, EV, and IV
 -Tons of recipe changes for circuitry stuff
--Removed Black Steel and Tungsten smelting in furnace.
--Removed water + sulfur recipe for sulfuric acid.
--Removed uncrafting table.
+-Removed Black Steel and Tungsten smelting in furnace
+-Removed water + sulfur recipe for sulfuric acid
+-Removed uncrafting table
 Removed mods:
 GregBlockUtils
 ExCompressum
@@ -18,12 +28,12 @@ ExNihilo
 
 
 1.11
--Disabled log warning about messages from ftb utilities.
--Disable cheap paper recipe.
+-Disabled log warning about messages from ftb utilities
+-Disable cheap paper recipe
 -Removed fragmented carbon(conflicts with coal pieces)
--Removed LV superconductor from smelting in furnace.
+-Removed LV superconductor from smelting in furnace
 -Added Cutting machine recipe for black carpets
--Added Custom GTCE materials to TConstruct tools.
+-Added Custom GTCE materials to TConstruct tools
 
 
 1.10
@@ -78,9 +88,9 @@ Fix techguns bug with twilight forest
 Fix hopper recipes
 
 1.5
-Changed recipe for furnace. Removed the gate for Tcomplement's Melter.
-Reverted back recipes for Tcomplement's porcelain items.
-Added Melting for basic metals ores and dusts in TConstruct.
+Changed recipe for furnace. Removed the gate for Tcomplement's Melter
+Reverted back recipes for Tcomplement's porcelain items
+Added Melting for basic metals ores and dusts in TConstruct
 
 1.4
 Deduplication of plates from most materials
@@ -101,7 +111,7 @@ Nerfed mutagen making in chemical reactor
 -Added Thaumic Additions
 -Fix OpenComputers recipes
 -Changed new mods recipes to match GT style
--Changed Void metal and Thaumium armor crafting to match GT style.
+-Changed Void metal and Thaumium armor crafting to match GT style
 
 1.1
 -Added Thaumcraft
