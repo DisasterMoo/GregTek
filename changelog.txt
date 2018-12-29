@@ -1,5 +1,6 @@
 1.13
 -Added melting for small gear and rotor extruder shapes in tconstruct forge
+-Added a way to make polycaprolactam(efficient strings)
 -Disable gallium arsenide ingot in blast furnace(conflicts with silicon boule)
 -Changed small gear recipes(conflicted with axe head)
 -Changed amperage of superconductors

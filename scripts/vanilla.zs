@@ -2425,12 +2425,6 @@ recipes.addShaped(<gregtech:machine:18>,[
 [<ore:plateWroughtIron>,<ore:plateSteel>,<ore:plateWroughtIron>]
 ]);
 
-recipes.addShaped(<gtadditions:ga_meta_item:32024>*2,[
-[null,<minecraft:paper>,null],
-[<ore:wireGtSingleCopper>,<ore:dustCharcoal>,<ore:wireGtSingleCopper>],
-[null,<minecraft:paper>,null]
-]);
-
 recipes.addShapeless(<gregtech:cable_red_alloy:5>,[<ore:wireGtSingleRedAlloy>,<minecraft:paper>]);
 
 recipes.addShaped(<minecraft:glass_pane>*2,[

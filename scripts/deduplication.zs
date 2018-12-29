@@ -32,6 +32,13 @@
 furnace.remove(<techguns:itemshared:85>);
 furnace.remove(<galacticraftplanets:item_basic_asteroids>);
 
+#Remove dusts from handcraft
+recipes.remove(<gregtech:meta_item_1:2109>);
+recipes.remove(<gregtech:meta_item_1:2126>);
+recipes.remove(<gregtech:meta_item_1:2231>);
+recipes.remove(<gregtech:meta_item_1:2232>);
+recipes.remove(<gregtech:meta_item_1:2233>);
+
 
 #Remove from JEI
 mods.jei.JEI.removeAndHide(<techguns:itemshared:88>);

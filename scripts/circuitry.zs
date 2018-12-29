@@ -34,12 +34,15 @@ for entry in assembler.recipes {
     for entryOutputs in entry.outputs {
 		if(entryOutputs has <gtadditions:ga_meta_item:32018>){
 			entry.remove();
+			break;
 		}
-		if(entryOutputs has <gtadditions:ga_meta_item:32024>){
+		if(entryOutputs has <gtadditions:ga_meta_item:32024>*12){
 			entry.remove();
+			break;
 		}
-		if(entryOutputs has <gtadditions:ga_meta_item:32019>){
+		if(entryOutputs has <gtadditions:ga_meta_item:32019>*16){
 			entry.remove();
+			break;
 		}
 	}
 }
@@ -49,30 +52,39 @@ for entry in circuit_assembler.recipes {
     for entryOutputs in entry.outputs {
 		if(entryOutputs has <gtadditions:ga_meta_item:32016>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gtadditions:ga_meta_item:32015>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gregtech:meta_item_1:32703>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gregtech:meta_item_1:32704>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gtadditions:ga_meta_item:32038>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gtadditions:ga_meta_item:32039>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gtadditions:ga_meta_item:32040>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gtadditions:ga_meta_item:32041>){
 			entry.remove();
+			break;
 		}
-		if(entryOutputs has <gtadditions:ga_meta_item:32715>){
+		if(entryOutputs has <gregtech:meta_item_1:32715>*4){
 			entry.remove();
+			break;
 		}
 	}
 }
@@ -145,13 +157,13 @@ recipes.addShaped(<gtadditions:ga_meta_item:32024>,[
 assembler.recipeBuilder()
     .inputs([anyCarbon, <ore:wireGtSingleCopper>*4, <ore:wireFineCopper>*4])
 	.fluidInputs([<liquid:glue>*200])
-	.outputs(<gtadditions:ga_meta_item:32018>*4)
+	.outputs(<gtadditions:ga_meta_item:32024>*4)
 	.EUt(8).duration(120).buildAndRegister();
 	
 assembler.recipeBuilder()
     .inputs([anyCarbon, <ore:wireGtSingleAnnealedCopper>*4, <ore:wireFineAnnealedCopper>*4])
 	.fluidInputs([<liquid:glue>*200])
-	.outputs(<gtadditions:ga_meta_item:32018>*8)
+	.outputs(<gtadditions:ga_meta_item:32024>*8)
 	.EUt(8).duration(120).buildAndRegister();
 	
 #Good Circuit
@@ -281,13 +293,13 @@ circuit_assembler.recipeBuilder()
     .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineCopper>*2, <ore:boltCopper>*2])
 	.fluidInputs([<liquid:soldering_alloy>*72])
 	.outputs([<gregtech:meta_item_1:32715>*2])
-	.EUt(2400).duration(30).buildAndRegister();
+	.EUt(600).duration(30).buildAndRegister();
 	
 circuit_assembler.recipeBuilder()
     .inputs([<gtadditions:ga_meta_item:32008>, <gtadditions:ga_meta_item:32053>, <ore:wireFineCopper>*2, <ore:boltCopper>*2])
 	.fluidInputs([<liquid:tin>*144])
 	.outputs([<gregtech:meta_item_1:32715>*2])
-	.EUt(2400).duration(30).buildAndRegister();
+	.EUt(600).duration(30).buildAndRegister();
 	
 #Workstation(MV)
 circuit_assembler.recipeBuilder()

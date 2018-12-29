@@ -346,8 +346,6 @@ assembler.recipeBuilder().inputs([<ore:wireGtOctalTin>]).fluidInputs([<liquid:st
 assembler.recipeBuilder().inputs([<ore:wireGtHexTin>]).fluidInputs([<liquid:rubber> * 2304]).outputs([<gregtech:cable_tin:9>]).property("circuit",24).duration(150).EUt(8).buildAndRegister();
 assembler.recipeBuilder().inputs([<ore:wireGtHexTin>]).fluidInputs([<liquid:styrene_butadiene_rubber> * 2304]).outputs([<gregtech:cable_tin:9>]).property("circuit",24).duration(150).EUt(8).buildAndRegister();
 
-assembler.recipeBuilder().inputs([<ore:wireFineCopper> * 4, <ore:dustCharcoal>]).outputs([<gtadditions:ga_meta_item:32024>*6]).duration(160).EUt(6).buildAndRegister();
-
 //BLAST FURNACE
 blast_furnace.recipeBuilder().inputs([<ore:dustGraphite> * 1, <ore:dustSilicon> * 1])
     .outputs([<gregtech:meta_item_1:10205> * 1])
@@ -461,18 +459,23 @@ for entry in assembler.recipes {
     for entryOutputs in entry.outputs {
 		if(entryOutputs has <gregtech:meta_item_1:32600>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gregtech:meta_item_1:32601>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gregtech:meta_item_1:32602>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gregtech:meta_item_1:32603>){
 			entry.remove();
+			break;
 		}
 		if(entryOutputs has <gregtech:meta_item_1:32604>){
 			entry.remove();
+			break;
 		}
 	}
 }
@@ -512,6 +515,9 @@ reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:gas>*1000]).fl
 reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:naphtha>*1000]).fluidOutputs([<liquid:steamcracked_naphtha>*800]).EUt(30).duration(200).buildAndRegister();
 reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:light_fuel>*1000]).fluidOutputs([<liquid:cracked_light_fuel>*800]).EUt(30).duration(200).buildAndRegister();
 reactor.recipeBuilder().fluidInputs([<liquid:steam>*2000, <liquid:heavy_fuel>*1000]).fluidOutputs([<liquid:cracked_heavy_fuel>*800]).EUt(30).duration(200).buildAndRegister();
+
+//polycaprolactam
+reactor.recipeBuilder().inputs([<ore:dustSaltpeter>]).fluidInputs([<liquid:naphtha>*500]).fluidOutputs([<liquid:polycaprolactam>*576]).outputs([<gregtech:meta_item_1:54>]).EUt(30).duration(200).buildAndRegister();
 
 //Cutting black wool
 saw.recipeBuilder().inputs([<minecraft:wool:15>]).outputs([<minecraft:carpet:15>*3]).EUt(4).duration(50).buildAndRegister();
